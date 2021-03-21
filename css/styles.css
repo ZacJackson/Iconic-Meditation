@@ -224,7 +224,6 @@ navbar
   z-index: 1;
   cursor: pointer;
   /* animation */
-  animation: bounce 2s ease infinite;
 }
 /* navbar */
 .navbar {
@@ -321,7 +320,6 @@ Header
   outline-offset: 0.25rem;
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
-  animation: show 5s linear 2;
 }
 /* content divider */
 .content-divider {
@@ -329,7 +327,7 @@ Header
   background: linear-gradient(
     to left,
     var(--clr-primary),
-    #e9b949,
+    #00ff00,
     var(--clr-primary)
   );
 }
