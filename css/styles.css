@@ -223,7 +223,10 @@ navbar
   color: var(--clr-primary);
   z-index: 1;
   cursor: pointer;
+<<<<<<< HEAD
   /* animation */
+=======
+>>>>>>> 622a0f56a36e0ef6a7c4185ea646eb365bc2483e
 }
 /* navbar */
 .navbar {
