@@ -288,8 +288,41 @@ Header
 * .header {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
-    url("../images/A_bhuddist_monk_meditating_on_top_of_a_mountain_1.jpeg")
-      center/cover no-repeat fixed;
+    url("../images/image_of_aq_woman_meditating.jpeg") center/cover no-repeat
+      fixed;
+  position: relative;
+  /* animation */
+  overflow-x: hidden;
+}
+.header-product-page {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url("../images/image_of_a_man_meditating.jpg") center/cover no-repeat fixed;
+  position: relative;
+  /* animation */
+  overflow-x: hidden;
+}
+.header-skills-page {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url("../images/image\ _of_meditative_atmosphere.jpeg") center/cover
+      no-repeat fixed;
+  position: relative;
+  /* animation */
+  overflow-x: hidden;
+}
+.header-about-page {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url("../images/health_wealth_image.jpeg") center/cover no-repeat fixed;
+  position: relative;
+  /* animation */
+  overflow-x: hidden;
+}
+.header-contact-page {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url("../images/AdobeStock_307313422.jpeg") center/cover no-repeat fixed;
   position: relative;
   /* animation */
   overflow-x: hidden;
@@ -398,6 +431,7 @@ About
   opacity: 0.5;
   transform: scale(1.2);
 }
+
 .about-text {
   max-width: 26rem;
   color: var(--clr-grey-5);
