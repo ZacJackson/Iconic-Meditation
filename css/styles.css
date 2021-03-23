@@ -446,60 +446,7 @@ About
     padding-left: 2rem;
   }
 }
-/*
-=============== 
-Products
-===============
-*/
-.products {
-  background: var(--clr-grey-10);
-}
-.product {
-  margin-bottom: 2rem;
-}
-.products article {
-  padding: 2rem 0;
-}
-.product-text {
-  color: var(--clr-grey-5);
-  max-width: 26rem;
-}
-.product-img {
-  border-radius: var(--radius);
-  margin-bottom: 2rem;
-  height: 17rem;
-  object-fit: cover;
-}
-.product-price {
-  color: var(--clr-primary);
-}
-@media screen and (min-width: 768px) {
-  .product {
-    float: left;
-    width: 50%;
-    padding-right: 2rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .product {
-    width: 33.3%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .product-info {
-    float: left;
-    width: 30%;
-  }
 
-  .product-inventory {
-    float: left;
-    width: 70%;
-  }
-  .product {
-    margin-bottom: 0;
-    padding: 1rem;
-  }
-}
 /* 
 ===============
 services
@@ -674,4 +621,80 @@ footer
 }
 .company {
   color: var(--clr-primary);
+  /*
+  ===========
+   blog
+  ===========
+  */
+}
+.blog {
+  background: var(--clr-grey-10);
+}
+.blog-title {
+  text-align: center;
+  text-decoration: underline var(--clr-primary);
+}
+.card {
+  height: 27rem;
+  position: relative;
+  margin: 10px;
+  /* talk later */
+  perspective: 1500px;
+}
+.card-info {
+  padding: 1rem 1.5rem;
+}
+.card-side {
+  backface-visibility: hidden;
+  transition: all 2s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius);
+}
+
+.card-front {
+  background: var(--clr-white);
+}
+.card-back {
+  background: rgb(248, 195, 126);
+  transform: rotateY(180deg);
+  display: grid;
+  place-items: center;
+}
+.card:hover .card-front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card-back {
+  transform: rotateY(0);
+}
+.card-front img {
+  height: 13rem;
+  object-fit: cover;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+.card-footer img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.card-footer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+.card-footer p {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  justify-self: end;
+  color: var(--clr-primary);
+  font-size: 0.85rem;
+}
+.blog-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
 }
