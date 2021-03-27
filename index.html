@@ -4,232 +4,239 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="X-UA-Compatible" content="chrome" />
   <title>Iconic Meditation || Home</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/iconic_fav_icon.png" type="image/x-icon" />
   <!-- font-awesome -->
   <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css" />
-  <!-- custom css -->
+  <!-- styles css -->
   <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="shortcut icon" href="./images/iconic-favicon (2).png" type="image/x-icon">
 </head>
 
 <body>
-  <!-- navbar -->
-  <!-- nav button -->
-  <span class="nav-btn" id="nav-btn">
-    <i class="fas fa-bars"></i>
-  </span>
-  <nav class="navbar" id="navbar">
-    <div class="navbar-header">
-      <span class="nav-close" id="nav-close">
-        <i class="fas fa-times"></i>
-      </span>
-    </div>
-    <ul class="nav-items">
-      <li>
-        <a href="./index.html" class="nav-link">Home</a>
-      </li>
-      <li>
-      <li>
-        <a href="./blog.html" class="nav-link">Blog</a>
-      <li>
-      <li>
-        <a href="./skills.html" class="nav-link">Skills</a>
-      </li>
-      <li>
-        <a href="./services.html" class="nav-link">Services</a>
-      </li>
-      <li>
-        <a href="./about.html" class="nav-link">About</a>
-      </li>
-      <li>
-        <a href="./contact.html" class="nav-link">Contact</a>
-      </li>
-    </ul>
-  </nav>
   <!-- header  -->
-  <header class="header">
-    <div class="banner">
-      <h2>Discover your true potential</h2>
-      <h1>
-        Iconic Meditation</h1>
-      
-      <a href="skills.html" class="btn banner-btn">
-        explore
-      </a>
+  <header id="home">
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./images/iconic-logo.png" class="nav-logo" alt="site-logo" />
+          <button type="button" class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- end of nav header -->
+        <!-- nav links -->
+        <ul class="nav-links" id="nav-links">
+          <!-- single link -->
+          <li>
+            <a href="#home" class="nav-link scroll-link">home</a>
+          </li>
+          <!-- end of single link -->
+          <!-- single link -->
+          <li>
+            <a href="#about" class="nav-link scroll-link">about</a>
+          </li>
+          <!-- end of single link -->
+          <!-- single link -->
+          <li>
+            <a href="#blog" class="nav-link scroll-link">blog</a>
+          </li>
+          <!-- end of single link -->
+          
+          <!-- single link -->
+          <li>
+            <a href="#services" class="nav-link scroll-link">services</a>
+          </li>
+          <!-- end of single link -->
+          <!-- single link -->
+          <li>
+            <a href="../contact.html" class="nav-linkz">contact</a>
+          </li>
+          <!-- end of single link -->
+        </ul>
+        <!-- end of nav links -->
+        <!-- nav icons -->
+        <ul class="nav-icons">
+          <!-- single icon -->
+          <li>
+            <a href="https://www.facebook.com/IconicMeditation" target="_blank" class="nav-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <li>
+            <a href="https://twitter.com/IconicMeditator" target="_blank" class="nav-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <li>
+            <a href="https://www.instagram.com/iconic_meditation/" target="_blank" class="nav-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <!-- end of single icon -->
+          <!-- end of single icon -->
+        </ul>
+        <!-- end of nav icons -->
+      </div>
+    </nav>
+    <!-- hero -->
+    <div class="hero">
+      <div class="hero-banner">
+        <h1>Discover your true potential</h1>
+        <p>
+          Forget overthinking and be present instead. Meditation is the way to a more fulfilling and meanningful life.
+        </p>
+        <a href="#blog" class="btn hero-btn scroll-link">explore</a>
+      </div>
     </div>
   </header>
   <!-- end of header  -->
+  <!-- content divider -->
   <div class="content-divider"></div>
-  <!-- skills section -->
-  <section class="skills clearfix">
-    <!-- single skill -->
-    <article class="skill">
-      <span class="skill-icon">
-        <i class="fas fa-brain"></i>
-      </span>
-      <h4 class="skill-title">Mind</h4>
-      <p class="skill-text">
-        Meditation is not just about clearing your head or relaxing your body and mind; it's also a skill that will help you be more productive in
-        all aspects of life.
-      </p>
-    </article>
-    <!-- end of single skill -->
-    <!-- single skill -->
-    <article class="skill">
-      <span class="skill-icon">
-        <i class="fas fa-running"></i>
-      </span>
-      <h4 class="skill-title">Body</h4>
-      <p class="skill-text">
-        Meditation is the key to a more energized life. This will help you strengthen your body and focus on areas of need when you really need it most, like at the end of a long day.
-
-      </p>
-    </article>
-    <!-- end of single skill -->
-    <!-- single skill -->
-    <article class="skill">
-      <span class="skill-icon">
-        <i class="fas fa-praying-hands"></i>
-      </span>
-      <h4 class="skill-title">Spirit</h4>
-      <p class="skill-text">
-        Meditation is an ancient spiritual practice that has been shown to help people become more compassionate and empathetic.
-      </p>
-    </article>
-    <!-- end of single skill -->
-    <!-- single skill -->
-    <article class="skill">
-      <span class="skill-icon">
-        <i class="fas fa-book"></i>
-      </span>
-      <h4 class="skill-title">Resources</h4>
-      <p class="skill-text">
-        Browse the resources we have available on to
-        learn how you can make it work for you, and increase your knowledge base in this life-altering practice.
-      </p>
-    </article>
-    <!-- end of single skill -->
-  </section>
-  <!-- end of skills section -->
-  <!-- blog section begins -->
-<section class="section blog">
-<!-- section title -->
-<div class="blog-title">
-  <h2>Blog</h2>
-  <div class="underline"></div>
-</div>
-<!-- end of section title -->
-<div class="section-center blog-center">
-  <!-- single article -->
-<div class="card">
-  <!-- card front -->
-  <div class="card-side card-front">
-    <img src="./images/health_wealth_image.jpeg">
-    <div class="card-info">
-      <h4>Meditation: A beginners guide.</h4>
-      <p>This guide will provide you with essential information about mindfulness meditation techniques that are easy to
-        learn,
-        what benefits they offer and how they differ from each other.</p>
-      <div class="card-footer">
-        <img src="./images/iconic-favicon (2).png" alt="iconic meditation logo">
-        <p>7 min read</p>
-      </div>
-    </div>
-    </div>
-  <!-- card back -->
-  <div class="card-side card-back">
-    <button class="btn" onclick=""></button>
-  </div>
-</div>
-  <!-- end of single article -->
-  <!-- single article -->
-  <div class="card">
-    <!-- card front -->
-    <div class="card-side card-front">
-      <img src="./images/image_of_letters_that_spell_anger.jpeg" alt="anger image">
-      <div class="card-info">
-        <h4>Controlling Anger: The Mindful Approach</h4>
-        <p>This article discusses the nature of anger and aims to outline and elaborate on techniques that can help to improve the way you express anger.</p>
-        <div class="card-footer">
-          <img src="./images/iconic-favicon (2).png" alt="iconic meditation logo">
-          <p>7 min read</p>
+      <!-- about section -->
+      <section class="section" id="about">
+        <!-- title -->
+        <div class="section-title">
+          <h2>about <span>us</span></h2>
         </div>
-      </div>
+        <!-- end of title -->
+        <div class="section-center about-center">
+          <!-- about image wrapper -->
+          <article class="about-img">
+        <img src="./images/AdobeStock_307313422.jpeg" class="about-photo" alt="relax" />
+      </article>
+      <article class="about-info">
+        <h3>Our story</h3>
+        <p>Meditation is an important part of life that many people don't fully understand. Iconic Meditation has taken on the
+        responsibility of spreading awareness to those who need it most in order to improve their quality of living and mental
+        health.</p>
+        <p>There are many ways to combat the feeling of being unwell. One is by observing your mind, body and emotions and
+        reflecting on what you have done in the past which may be holding you back from achieving a more positive mindset.</p>
+        <a href="#" class="btn">Read more</a>
+      </article>
     </div>
-    <!-- card back -->
-    <div class="card-side card-back">
-      <button class="btn">read more</button>
-    </div>
-  </div>
-  <!-- end of single article -->
-  <!-- single article -->
-  <div class="card">
-    <!-- card front -->
-    <div class="card-side card-front">
-      <img src="./images/A_bhuddist_monk_meditating_on_top_of_a_mountain_1.jpeg" alt="meditation image" >
-      <div class="card-info">
-        <h4>Transcendental Meditation. Living life more completely.</h4>
-        <p>This guide will provide you with essential information about transcendental meditation techniques that are easy to
-          learn,
-          what benefits they offer and how they differ from each other.</p>
-        <div class="card-footer">
-          <img src="./images/iconic-favicon (2).png" alt="iconic meditation logo">
-          <p>7 min read</p>
-        </div>
-      </div>
-    </div>
-    <!-- card back -->
-    <div class="card-side card-back">
-      <button class="btn">read more</button>
-    </div>
-  </div>
-  <!-- end of single article -->
   </div>
 </section>
-  <!-- blog section ends -->
-
-  <!-- about -->
-  <section>
-    <div class="section-center clearfix">
-      <!-- about-img -->
-      <article class="about-img">
-        <div class="about-picture-container">
-          <img src="./images/image_of_a_man_meditating.jpg" alt="man meditating" class="about-picture" />
-        </div>
-      </article>
-      <!-- about-info -->
-      <article class="about-info">
-        <!-- section title -->
-        <div class="section-title">
-          <h3>about Us</h3>
-          <h2>Our story</h2>
-        </div>
-        <!-- end of section title -->
-        <p class="about-text">
-          The owners of Iconic Meditation are proud to be a holistic resource for health and wellness. Our focus is on healthy
-          diet, healthy mind, healthy emotions and healthy lifestyle.
-        </p>
-        <p class="about-text">
-          Meditation is an excellent way to master your emotions and tap into your hidden potential. It is also a great way to improve on what you already know and find that unique way of expressing and standing out with it.
-        </p>
-        
-        <a href="about.html" class="btn">learn more</a>
-      </article>
-    </div>
-  </section>
-  <!-- end of about -->
-  
-
-  <!-- services -->
-  <section class="services"></section>
+<!-- end of about section -->
+<!-- blog section begins -->
+<section class="section blog" id="blog">
   <!-- section title -->
-  <div class="section-title services-title">
-    <h3>Explore our</h3>
-    <h2>Services</h2>
+  
+  <div class="blog-title">
+    <h2>Meditation Diary</h2>
+    <div class="underline"></div>
   </div>
   <!-- end of section title -->
-  <div class="section-center clearfix">
+  <div class="section-center blog-center">
+    <!-- single article -->
+    <div class="card">
+      <!-- card front -->
+      <div class="card-side card-front">
+        <img src="./images/health_wealth_image.jpeg">
+        <div class="card-info">
+          <h4>Meditation: A beginners guide.</h4>
+          <p>This guide will provide you with essential information about mindfulness meditation techniques that are
+            easy to learn and what benefits they offer.
+            </p>
+          <div class="card-footer">
+            <img src="./images/iconic_fav_icon.png" alt="iconic meditation logo">
+            <p>7 min read</p>
+          </div>
+        </div>
+      </div>
+      <!-- card back -->
+      <div class="card-side card-back">
+        <a href="./Mindfulness-meditation-for-beginners.html">
+          <button class="btn">read more</button>
+        </a>
+
+      </div>
+    </div>
+    <!-- end of single article -->
+    <!-- single article -->
+    <div class="card">
+      <!-- card front -->
+      <div class="card-side card-front">
+        <img src="./images/image_of_letters_that_spell_anger.jpeg" alt="anger image">
+        <div class="card-info">
+          <h4>Controlling Anger: The Mindful Approach</h4>
+          <p>This article discusses the nature of anger and aims to outline and elaborate on techniques that can help
+            to improve the way you express anger.</p>
+          <div class="card-footer">
+            <img src="./images/iconic_fav_icon.png" alt="iconic meditation logo">
+            <p>7 min read</p>
+          </div>
+        </div>
+      </div>
+      <!-- card back -->
+      <div class="card-side card-back">
+        <button class="btn">read more</button>
+      </div>
+    </div>
+    <!-- end of single article -->
+    <!-- single article -->
+    <div class="card">
+      <!-- card front -->
+      <div class="card-side card-front">
+        <img src="./images/A_bhuddist_monk_meditating_on_top_of_a_mountain.jpeg" alt="meditation image">
+        <div class="card-info">
+          <h4>Transcendental Meditation. Living life more completely.</h4>
+          <p>This guide will provide you with essential information about transcendental meditation techniques that
+            are easy to learn and what benefits they offer.</p>
+          <div class="card-footer">
+            <img src="./images/iconic_fav_icon.png" alt="iconic meditation logo">
+            <p>7 min read</p>
+          </div>
+        </div>
+      </div>
+      <!-- card back -->
+      <div class="card-side card-back">
+        <button class="btn">read more</button>
+      </div>
+    </div>
+    <!-- end of single article -->
+  </div>
+  <div>
+    <a href="./blog.html" class="blog-btn btn">Join the discussion</a></div>
+  
+</section>
+<!-- blog section ends -->
+<!-- contact -->
+  <section class="section contact" id="contact">
+    <div class="section-center contact-center">
+      <!-- contact title -->
+      <article class="contact-title">
+        <h3><span class="contact-span">Zen</span> in your inbox!</h3>
+        <p>Sign up to our newsletter and stay up to date</p>
+      </article>
+      <!-- contact form -->
+      <form class="contact-form">
+        <input type="email" name="email" class="form-control" placeholder="your email" />
+        <button type="submit" class="btn-submit">submit</button>
+      </form>
+    </div>
+  </section>
+  <!-- end of contact -->
+
+
+<!-- services begin -->
+<!-- services -->
+<!-- services -->
+<section class="section" id="services">
+  <!-- section title -->
+  <div class="section-title">
+    <h3>Explore our</h3>
+    <h2><span>Services</span></h2>
+  </div>
+  <!-- end of section title -->
+  <div class="section-center featured-center">
     <!-- single card -->
     <article class="service-card">
       <div class="service-img-container">
@@ -243,11 +250,12 @@
       <!-- service info-->
       <div class="service-info">
         <h4>Free course: Learn basic breathing techniques.</h4>
-        <p>Learn basic breathing techniques that will help to boost your physical performance as you integrate tehm into your daily routine.</p>
+        <p>Learn basic breathing techniques that will help to boost your physical performance as you integrate tehm into
+          your daily routine.</p>
         <a href="services.html" class="btn service-btn">Read more</a>
       </div>
     </article>
-    <!-- end of single card -->
+    
     <!-- single card -->
     <article class="service-card">
       <div class="service-img-container">
@@ -261,7 +269,8 @@
       <!-- service info-->
       <div class="service-info">
         <h4>Meditation Classes and tutorials</h4>
-        <p>Learn from a skilled practitioner who will teach you meditation techniques that will enhance your knowledge about meditation.</p>
+        <p>Learn from a skilled practitioner who will teach you meditation techniques that will enhance your knowledge
+          about meditation.</p>
         <a href="services.html" class="btn service-btn">Read more</a>
       </div>
     </article>
@@ -279,98 +288,83 @@
       <!-- service info-->
       <div class="service-info">
         <h4>Guided meditations</h4>
-        <p>These guided meditations help you become better at meditating and often teach you the basics of what will be expected during your time in meditation. </p>
+        <p>These guided meditations help you become better at meditating and often teach you the basics of what will be
+          expected during your time in meditation. </p>
         <a href="services.html" class="btn service-btn">Read more</a>
       </div>
     </article>
     <!-- end of single card -->
   </div>
+  <div class="service-info">
+    <a href="./services.html" class="btn">learn  more</a>
+  </div>
 </section>
 <!-- end of services -->
-<!-- contact -->
-<section class="contact">
-  <div class="section-center clearfix">
-    <!-- contact info -->
-    <article class="contact-info">
-      <!-- contact item -->
-  
-<!-- end of contact item -->
-<!-- contact item -->
-<div class="contact-item">
-  <h4 class="contact-title">
-    <span class="contact-icon">
-      <i class="fas fa-envelope"></i>
-    </span>email
-  </h4>
-  <h4 class="contact-text">iconic@meditation.com</h4>
-</div>
-<!-- end of contact item -->
-<!-- contact item -->
-<div class="contact-item">
-  <h4 class="contact-title">
-    <span class="contact-icon">
-      <i class="fas fa-phone"></i>
-    </span>Phone
-  </h4>
-  <h4 class="contact-text">022-311-8696</h4>
-</div>
-<!-- end of contact item -->
-</article>
-    <article class="contact-form">
-      <h3>Contact us</h3>
-      <form action="https://formspree.io/f/xqkgrroq"
-  method="POST">
-        <div class="form-group">
-          <!-- inputs -->
-          <input type="text" placeholder="name" class="form-control" name="name">
+<!-- end of services -->
 
-          <input type="text" placeholder="email" class="form-control" name="email">
-          <textarea name="message" placeholder="message" class="form-control" rows="5"></textarea>
-          <!-- inputs end -->
-        </div>
-        <!-- button -->
-        <button type="submit" class=" btn submit-btn">submit here</button>
-      </form>
-    </article>
-  </div>
-</section>
-<!-- end of contact -->
-<!-- footer -->
-<footer class="footer">
-  <div class="section-center">
-    <div class="social-icons">
-      <!-- social icon -->
-      <a href="https://www.facebook.com/IconicMeditation" class="social-icon" target="_blank">
+
+  <!-- footer -->
+<footer class="section footer">
+  <!-- footer links -->
+  <ul class="footer-links">
+    <!-- single link -->
+    <li>
+      <a href="./index.html" class="footer-link">home</a>
+    </li>
+    <!-- end of single link -->
+    <!-- single link -->
+    <li>
+      <a href="#" class="footer-link">about</a>
+    </li>
+    <!-- end of single link -->
+    <!-- single link -->
+    <li>
+      <a href="./services.html" class="footer-link">services</a>
+    </li>
+    <!-- end of single link -->
+    <!-- single link -->
+    <li>
+      <a href="#" class="footer-link">blog</a>
+    </li>
+    <!-- end of single link -->
+    <!-- single link -->
+    <li>
+      <a href="./contact.html" class="footer-link">contact</a>
+    </li>
+    <!-- end of single link -->
+  </ul>
+  <!-- end of footer links -->
+  <!-- footer icons -->
+  <ul class="footer-icons">
+    <!-- single icon -->
+    <li>
+      <a href="https://www.facebook.com/IconicMeditation" target="_blank" class="footer-icon">
         <i class="fab fa-facebook"></i>
       </a>
-      <!-- end of social icon -->
-      <!-- social icon -->
-      <a href="https://twitter.com/IconicMeditator" class="social-icon" target="_blank">
+    </li>
+    <!-- end of single icon -->
+    <!-- single icon -->
+    <li>
+      <a href="https://twitter.com/IconicMeditator" target="_blank" class="footer-icon">
         <i class="fab fa-twitter"></i>
       </a>
-      <!-- end of social icon -->
-      <!-- social icon -->
-      <a href="https://www.instagram.com/iconic_meditation/" class="social-icon" target="_blank">
+    </li>
+    <!-- end of single icon -->
+    <!-- single icon -->
+    <li>
+      <a href="https://www.instagram.com/iconic_meditation/" target="_blank" class="footer-icon">
         <i class="fab fa-instagram"></i>
       </a>
-      <!-- end of social icon -->
-        <!-- social icon -->
-      <a href="https://www.pinterest.nz/IconicMeditation" class="social-icon" target="_blank">
-        <i class="fab fa-pinterest"></i>
-      </a>
-      <!-- end of social icon -->
-<!-- social icon -->
-      <a href="https://iconic-meditation.tumblr.com/" class="social-icon" target="_blank">
-        <i class="fab fa-tumblr"></i>
-      </a>
-      <!-- end of social icon -->
-    </div>
-    <h4 class="footer-text">&copy;<span id="date" >2021</span>
-      <span class="company">Iconic Meditation</span><br> all rights reserved
-    </h4>
-  </div>
+    </li>
+    <!-- end of single icon -->
+  </ul>
+  <!-- end of footer icons -->
+  <p class="copyright">
+    copyright © Iconic Meditation - Health and Wellness Website <span id="date">2021</span>.
+    all rights reserved
+  </p>
 </footer>
-  <script src="app.js"></script>
+  <!-- js -->
+  <script src="./js/app.js"></script>
 </body>
-
 </html>
