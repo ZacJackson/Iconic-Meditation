@@ -271,6 +271,7 @@ Navbar
 		padding: 0 0;
 		margin-right: 2rem;
 	}
+
 	.nav-link:hover {
 		padding: 0;
 		color: var(--clr-grey-5);
