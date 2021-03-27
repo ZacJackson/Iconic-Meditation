@@ -75,6 +75,16 @@ img:not(.nav-logo) {
 	width: 100%;
 	display: block;
 }
+@media screen and (max-width: 532px) {
+	.nav-logo {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.nav-logo {
+		width: 100%;
+	}
+}
 
 h1,
 h2,
@@ -430,8 +440,8 @@ blog
 	display: block;
 
 	align-items: center;
-	margin-right: 10rem;
-	margin-left: 10rem;
+	margin-right: 4rem;
+	margin-left: 4rem;
 	margin-top: 2rem;
 	text-align: center;
 }
