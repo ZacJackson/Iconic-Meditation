@@ -239,7 +239,7 @@ Navbar
 	transition: var(--transition);
 }
 .show-links {
-	height: 280px;
+	height: 300px;
 }
 @media screen and (min-width: 992px) {
 	/* hide toggle btn */
