@@ -701,3 +701,64 @@ Footer
 	letter-spacing: var(--spacing);
 	color: var(--clr-white);
 }
+/* 
+===========
+post 1
+===========
+ */
+.post-header {
+	height: 100vh;
+	background: linear-gradient(
+			rgba(0, 255, 255, 0.555),
+			rgba(0, 255, 255, 0.333)
+		),
+		url("../images/image\ _of_meditative_atmosphere.jpeg")
+			center/cover no-repeat fixed;
+	display: grid;
+	align-items: center;
+}
+.post-title-1 {
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+}
+.post-title-1 p {
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+}
+.section-1 {
+	margin: 2rem;
+}
+.section-1 h2 {
+	padding: 1rem;
+}
+.section-1 p {
+	padding: 1rem;
+	font-size: 1.3rem;
+}
+.section-1 h3 {
+	padding: 1rem;
+	font-size: 2rem;
+}
+.section-1 h4 {
+	padding: 2rem;
+	font-weight: 900;
+	font-size: 2rem;
+}
+.img-1 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 400px;
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+.key-points li {
+	list-style-type: disc;
+	padding: 1rem;
+	font-size: 2rem;
+}
+.divider {
+	border-top: 3px dotted #bbb;
+}
