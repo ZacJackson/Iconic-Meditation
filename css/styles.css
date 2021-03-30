@@ -43,7 +43,7 @@ Variables
 	--transition: all 0.3s linear;
 	--spacing: 0.25rem;
 	--radius: 0.5rem;
-	--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 	--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 /*
@@ -438,19 +438,11 @@ blog
 	grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
 }
 .blog-btn {
-	display: block;
-
-	align-items: center;
-	margin-right: 4rem;
-	margin-left: 4rem;
-	margin-top: 2rem;
 	text-align: center;
 }
-@media screen and (min-width: 992px) {
-	.blog-btn {
-		margin-left: 45rem;
-		margin-right: 45rem;
-	}
+.blog-info {
+	padding: 2.35rem 1.5rem;
+	text-align: center;
 }
 /*
 =============== 
@@ -509,6 +501,7 @@ Contact
 */
 .contact {
 	background: var(--clr-primary-6);
+	box-shadow: var(--dark-shadow);
 }
 /* .contact {
   background: var(--clr-primary-6);
