@@ -112,6 +112,7 @@ h4 {
 p {
 	margin-bottom: 1.25rem;
 	color: var(--clr-grey-5);
+	font-size: 1rem;
 }
 @media screen and (min-width: 800px) {
 	h1 {
@@ -708,6 +709,9 @@ Footer
 post 1
 ===========
  */
+.article-text {
+	font-size: 1.35rem;
+}
 .post-header {
 	height: 100vh;
 	background: linear-gradient(
@@ -724,11 +728,7 @@ post 1
 	color: white;
 	text-align: center;
 }
-.post-title-1 p {
-	font-size: 2rem;
-	color: white;
-	text-align: center;
-}
+
 .section-center {
 	padding: 2rem;
 }
@@ -741,9 +741,7 @@ post 1
 .section-1 {
 	margin: 2rem;
 }
-.article-1 p {
-	font-size: 1.5rem;
-}
+
 .img-1 {
 	height: 100%;
 	object-fit: cover;
@@ -776,14 +774,12 @@ article 2
 .article-2 {
 	border: solid black 2px;
 	padding: 2rem;
-	margin-top: 5rem;
+	margin: 5rem;
 }
 .article-2 h2 {
 	text-align: center;
 }
-.article-2 p {
-	font-size: 1.2rem;
-}
+
 /* 
 	============
 	quote starts
@@ -816,8 +812,8 @@ article 2
 }
 .info-box p {
 	color: white;
-	font-size: 1.3rem;
 }
+
 /* 
 ============
 article 3
@@ -828,6 +824,7 @@ article 3
 	padding: 2rem;
 	font-size: 1.25rem;
 }
+
 .article-3-list {
 	list-style-type: disc;
 }
@@ -836,7 +833,15 @@ article 3
 	article 4
 	============
 	 */
-.article-4 p {
-	padding: 1.3rem;
-	font-size: 1.25rem;
+.article-4 {
+	padding: 2rem;
 }
+
+.list-span {
+	font-weight: bold;
+}
+/* 
+==============
+comment section
+=============
+ */
