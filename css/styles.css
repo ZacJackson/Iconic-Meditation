@@ -706,7 +706,7 @@ Footer
 }
 /* 
 ===========
-post 1
+mindfulness meditation post
 ===========
  */
 .article-text {
@@ -843,5 +843,35 @@ article 3
 /* 
 ==============
 comment section
+=============
+ */
+/* 
+===========================
+mindfulness meditation ends
+==========================
+ */
+/* 
+==============
+chakra post
+=============
+ */
+.chakra-header {
+	height: 100vh;
+	background: linear-gradient(
+			rgba(50, 6, 122, 0.795),
+			rgba(202, 7, 7, 0.418)
+		),
+		url("../images/muladhara.jpg") center/cover no-repeat fixed;
+	display: grid;
+	align-items: center;
+}
+.page-title-1 {
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+}
+/* 
+==============
+chakra post section ends
 =============
  */
