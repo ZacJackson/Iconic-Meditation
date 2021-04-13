@@ -885,6 +885,18 @@ iframe {
 .key-points-bold {
 	font-weight: bolder;
 }
+@media screen and (max-width: 768px) {
+	.post-header {
+		background: linear-gradient(
+			rgba(50, 6, 122, 0.795),
+			rgba(202, 7, 7, 0.418)
+		);
+	}
+	iframe {
+		width: 300px;
+		height: 150px;
+	}
+}
 /* 
 ==============
 chakra post section ends
