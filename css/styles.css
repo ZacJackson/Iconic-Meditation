@@ -881,23 +881,20 @@ chakra post
 .key-points-bold {
 	font-weight: bolder;
 }
- {
+
+.responsive {
+	padding-bottom: 56.25%;
 	position: relative;
-	overflow: hidden;
 	width: 100%;
-	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	height: 0;
 }
-.responsive-iframe {
+.responsive iframe {
 	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
 	width: 100%;
 	height: 100%;
 }
 @media screen and (max-width: 768px) {
-	.post-header {
+	.chakra-header {
 		background: linear-gradient(
 			rgba(50, 6, 122, 0.795),
 			rgba(202, 7, 7, 0.418)
