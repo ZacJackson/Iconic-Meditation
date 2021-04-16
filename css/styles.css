@@ -949,6 +949,9 @@ sacral chakra post
 	font-size: 2rem;
 	color: rgb(255, 166, 0);
 }
+.sacral-traits h4 span {
+	font-size: 1rem;
+}
 .sacral-traits span {
 	font-weight: bold;
 }
