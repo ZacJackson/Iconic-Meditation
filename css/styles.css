@@ -940,7 +940,7 @@ sacral chakra post
 
 	outline: 4px solid rgb(255, 166, 0);
 	outline-offset: 1.5rem;
-	padding: 4rem;
+	padding: 1rem;
 	margin-bottom: 4rem;
 	margin-top: 4rem;
 	text-align: center;
@@ -970,8 +970,9 @@ sacral chakra post
 	font-size: 1.35rem;
 }
 .sacral-meditation {
-	border: solid rgb(255, 166, 0) 7px;
-	padding: 3rem;
+	padding: 1rem;
+	outline: rgb(255, 166, 0) solid 3px;
+	outline-offset: 2rem;
 }
 .meditation-article p {
 	color: rgb(82, 82, 82);
@@ -1016,10 +1017,15 @@ sacral chakra post
 .music-article h2 {
 	text-align: center;
 }
-@media screen and (min-width: 548px) {
+@media screen and (min-width: 768px) {
 	.sacral-traits h4 span {
 		font-size: 2rem;
 		color: rgb(255, 166, 0);
+	}
+	.sacral-meditation {
+		padding: 3rem;
+		border: solid rgb(255, 166, 0) 7px;
+		outline: none;
 	}
 }
 
