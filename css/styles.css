@@ -980,6 +980,11 @@ sacral chakra post
 .meditation-article h2 {
 	text-align: center;
 }
+
+.meditation-article h2 span {
+	display: block;
+	margin: 0 auto;
+}
 .meditation-article li {
 	padding: 0.75rem;
 }
@@ -1012,7 +1017,7 @@ sacral chakra post
 	text-align: center;
 }
 @media screen and (min-width: 548px) {
-	.sacral-traits h4 {
+	.sacral-traits h4 span {
 		font-size: 2rem;
 		color: rgb(255, 166, 0);
 	}
