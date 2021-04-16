@@ -948,7 +948,6 @@ sacral chakra post
 .sacral-traits h4 {
 	font-size: 2rem;
 	color: rgb(255, 166, 0);
-	text-align: center;
 }
 .sacral-traits span {
 	font-weight: bold;
@@ -1008,6 +1007,12 @@ sacral chakra post
 }
 .music-article h2 {
 	text-align: center;
+}
+@media screen and (min-width: 768px) {
+	.sacral-traits h4 {
+		font-size: 1rem;
+		color: rgb(255, 166, 0);
+	}
 }
 
 /* 
