@@ -1008,9 +1008,9 @@ sacral chakra post
 .music-article h2 {
 	text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 548px) {
 	.sacral-traits h4 {
-		font-size: 1rem;
+		font-size: 2rem;
 		color: rgb(255, 166, 0);
 	}
 }
