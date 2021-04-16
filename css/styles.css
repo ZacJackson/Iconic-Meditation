@@ -928,6 +928,7 @@ sacral chakra post
 }
 
 .sacral-title {
+	font-family: var(--ff-tertiary);
 	font-size: 2rem;
 	color: white;
 	text-align: center;
@@ -993,7 +994,7 @@ sacral chakra post
 	margin: 5rem;
 }
 .sacral-balancing {
-	margin-top: 3rem;
+	margin-top: 7rem;
 	margin-bottom: 3rem;
 	padding: 2rem;
 	background: rgba(255, 166, 0, 0.308);
@@ -1033,7 +1034,7 @@ sacral chakra post
 				rgba(122, 105, 6, 0.795),
 				rgba(202, 7, 7, 0.418)
 			),
-			url("../images/meditation_girl_resized.jpg")
+			url("../images/chakra-4354545_1280.jpg")
 				center/cover no-repeat fixed;
 		display: grid;
 		align-items: center;
