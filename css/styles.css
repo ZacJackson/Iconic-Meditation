@@ -122,6 +122,9 @@ p {
 li {
 	font-size: 1.35rem;
 }
+.divider {
+	margin: 3rem 0;
+}
 @media screen and (min-width: 800px) {
 	h1 {
 		font-size: 4rem;
@@ -919,13 +922,9 @@ sacral chakra post
 .sacral-header {
 	height: 100vh;
 	background: linear-gradient(
-			rgba(122, 105, 6, 0.795),
-			rgba(202, 7, 7, 0.418)
-		),
-		url("../images/meditation_girl_resized.jpg") center/cover
-			no-repeat fixed;
-	display: grid;
-	align-items: center;
+		rgba(122, 105, 6, 0.795),
+		rgba(202, 7, 7, 0.418)
+	);
 }
 
 .sacral-title {
@@ -933,7 +932,7 @@ sacral chakra post
 	color: white;
 	text-align: center;
 	position: relative;
-	top: 15rem;
+	top: 25rem;
 }
 .sacral-traits {
 	border: dotted 4px rgb(255, 166, 0);
@@ -1016,16 +1015,35 @@ sacral chakra post
 }
 .music-article h2 {
 	text-align: center;
+	padding: 3rem;
+	padding-bottom: 3rem;
+}
+.section-emotions {
+	padding-top: 2rem;
+	padding-bottom: 3rem;
 }
 @media screen and (min-width: 768px) {
 	.sacral-traits h4 span {
 		font-size: 2rem;
 		color: rgb(255, 166, 0);
 	}
-	.sacral-meditation {
-		padding: 3rem;
-		border: solid rgb(255, 166, 0) 7px;
-		outline: none;
+	.sacral-header {
+		height: 100vh;
+		background: linear-gradient(
+				rgba(122, 105, 6, 0.795),
+				rgba(202, 7, 7, 0.418)
+			),
+			url("../images/meditation_girl_resized.jpg")
+				center/cover no-repeat fixed;
+		display: grid;
+		align-items: center;
+	}
+	.sacral-title {
+		font-size: 2rem;
+		color: white;
+		text-align: center;
+		position: relative;
+		top: 15rem;
 	}
 }
 
