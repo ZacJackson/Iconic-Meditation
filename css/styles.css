@@ -118,6 +118,10 @@ p {
 	color: var(--clr-grey-5);
 	font-size: 1rem;
 }
+
+li {
+	font-size: 1.35rem;
+}
 @media screen and (min-width: 800px) {
 	h1 {
 		font-size: 4rem;
@@ -713,9 +717,6 @@ Footer
 mindfulness meditation post
 ===========
  */
-.article-text {
-	font-size: 1.35rem;
-}
 .post-header {
 	height: 100vh;
 	background: linear-gradient(
@@ -856,7 +857,7 @@ mindfulness meditation ends
  */
 /* 
 ==============
-chakra post
+root chakra post
 =============
  */
 .chakra-header {
@@ -893,6 +894,9 @@ chakra post
 	width: 100%;
 	height: 100%;
 }
+.chakra-stones-img {
+	padding-bottom: 3rem;
+}
 @media screen and (max-width: 768px) {
 	.chakra-header {
 		background: linear-gradient(
@@ -903,6 +907,110 @@ chakra post
 }
 /* 
 ==============
-chakra post section ends
+Root chakra post ends
 =============
  */
+/* 
+==============
+sacral chakra post
+=============
+ */
+
+.sacral-header {
+	height: 100vh;
+	background: linear-gradient(
+			rgba(122, 105, 6, 0.795),
+			rgba(202, 7, 7, 0.418)
+		),
+		url("../images/meditation_girl_resized.jpg") center/cover
+			no-repeat fixed;
+	display: grid;
+	align-items: center;
+}
+
+.sacral-title {
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 15rem;
+}
+.sacral-traits {
+	border: dotted 4px rgb(255, 166, 0);
+
+	outline: 4px solid rgb(255, 166, 0);
+	outline-offset: 1.5rem;
+	padding: 4rem;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+	text-align: center;
+}
+.sacral-traits h4 {
+	font-size: 2rem;
+	color: rgb(255, 166, 0);
+}
+.sacral-traits span {
+	font-weight: bold;
+}
+
+.sacral-article h2 {
+	font-size: 3rem;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+.sacral-article span {
+	color: rgb(255, 166, 0);
+}
+.sacral-article p {
+	color: black;
+	text-transform: var(--spacing);
+	font-size: 1.35rem;
+}
+.sacral-meditation {
+	border: solid rgb(255, 166, 0) 7px;
+	padding: 3rem;
+}
+.meditation-article p {
+	color: rgb(82, 82, 82);
+	font-size: 1.35rem;
+}
+.meditation-article h2 {
+	text-align: center;
+}
+.meditation-article li {
+	padding: 0.75rem;
+}
+.meditation-article span {
+	color: rgb(255, 166, 0);
+	margin: 5rem;
+}
+.sacral-balancing {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	padding: 2rem;
+	background: rgba(255, 166, 0, 0.308);
+}
+.balancing-article h2 {
+	text-align: center;
+}
+.balancing-article span {
+	color: rgb(255, 166, 0);
+}
+.balancing-article p {
+	font-size: 1.35rem;
+	color: rgb(82, 82, 82);
+}
+.music-article span {
+	color: rgb(255, 166, 0);
+	text-align: center;
+	padding-top: 3rem;
+}
+.music-article h2 {
+	text-align: center;
+}
+
+/* 
+	==============
+	sacral post ends
+	=============
+	 */
