@@ -870,7 +870,8 @@ root chakra post
 			rgba(50, 6, 122, 0.795),
 			rgba(202, 7, 7, 0.418)
 		),
-		url("../images/muladhara.jpg") center/cover no-repeat fixed;
+		url("../images/root-chakra.jpg") center/cover no-repeat
+			fixed;
 	display: grid;
 	align-items: center;
 }
