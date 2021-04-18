@@ -875,13 +875,117 @@ root chakra post
 	display: grid;
 	align-items: center;
 }
-.chakra-1 h1 {
+.root-heading {
 	font-family: var(--ff-tertiary);
 }
-.page-title-1 {
+.root-heading {
 	font-size: 2rem;
 	color: white;
 	text-align: center;
+}
+
+.root-traits {
+	border: dotted 4px rgb(255, 0, 0);
+
+	outline: 4px solid rgb(255, 0, 0);
+	outline-offset: 1.5rem;
+	padding: 1rem;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+	text-align: center;
+}
+
+.root-traits h4 {
+	font-size: 2rem;
+	color: rgb(255, 0, 0);
+}
+.root-traits h4 span {
+	font-size: 1rem;
+}
+.root-traits span {
+	font-weight: bold;
+	color: red;
+}
+.root-section {
+	padding: 3rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+.root-section p {
+	font-size: 1.35rem;
+}
+.foundation {
+	border: solid red 7px;
+	padding: 3rem;
+}
+.foundation p {
+	font-size: 1.35rem;
+}
+.root-btn a {
+	color: white;
+}
+.root-btn {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.root-btn-center {
+	float: right;
+	background: red;
+}
+.root-btn-center a {
+	color: white;
+}
+.stones-section {
+	padding-top: 5rem;
+	text-align: center;
+}
+.stones-section h2 {
+	padding: 2rem;
+}
+.article-stones p {
+	font-size: 1.35rem;
+}
+.music-root-section {
+	border: solid red 7px;
+	margin: 7rem auto;
+	padding: 3rem;
+}
+.music-root-section h2 {
+	text-align: center;
+}
+.music-root-section p {
+	font-size: 1.35rem;
+}
+.essential-article p {
+	font-size: 1.35rem;
+}
+.essential-article h2 {
+	text-align: center;
+}
+.essential-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.essential-span {
+	color: red;
+}
+.essential-root-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border: solid red 3px;
+}
+.essential-img-section p {
+	font-size: 1.5rem;
+	padding-top: 2rem;
+}
+
+.clear-essential {
+	float: left;
+}
+.clear p {
+	clear: both;
 }
 
 .key-points-bold {
@@ -956,6 +1060,7 @@ sacral chakra post
 }
 .sacral-traits span {
 	font-weight: bold;
+	color: rgb(255, 166, 0);
 }
 
 .sacral-article h2 {
@@ -1011,19 +1116,32 @@ sacral chakra post
 	font-size: 1.35rem;
 	color: rgb(82, 82, 82);
 }
-.music-article span {
-	color: rgb(255, 166, 0);
-	text-align: center;
-	padding-top: 3rem;
-}
-.music-article h2 {
-	text-align: center;
+.music-sacral-section {
+	border: solid rgb(255, 166, 0) 7px;
+	margin: 7rem auto;
 	padding: 3rem;
-	padding-bottom: 3rem;
 }
-.section-emotions {
-	padding-top: 2rem;
-	padding-bottom: 3rem;
+.music-sacral-section h2 {
+	text-align: center;
+}
+.music-sacral-section p {
+	font-size: 1.35rem;
+}
+.sacral-btn {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.sacral-btn-center {
+	float: right;
+	background: rgb(255, 166, 0);
+}
+.sacral-btn-center a {
+	color: white;
+}
+.essential-sacral-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border: solid rgb(255, 166, 0) 3px;
 }
 @media screen and (min-width: 768px) {
 	.sacral-traits h4 span {
