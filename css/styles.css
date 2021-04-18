@@ -469,7 +469,7 @@ About
 .about-img,
 .about-info {
 	margin-bottom: 2rem;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	letter-spacing: var(--spacing);
 }
 @media screen and (min-width: 992px) {
