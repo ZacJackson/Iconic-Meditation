@@ -517,1026 +517,1026 @@ h3 {
 		background: url("../images/nature.jpg") center/cover
 			no-repeat;
 	}
+}
 
-	/*
+/*
 =============== 
 About
 ===============
 */
-	/* section add to globals */
-	/* title add to globals */
-	/* section center add to globals */
+/* section add to globals */
+/* title add to globals */
+/* section center add to globals */
+.about-img,
+.about-info {
+	margin-bottom: 2rem;
+	font-size: 1rem;
+	letter-spacing: var(--spacing);
+}
+@media screen and (min-width: 992px) {
+	.about-center {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
 	.about-img,
 	.about-info {
-		margin-bottom: 2rem;
-		font-size: 1rem;
+		flex: 0 0 calc(50% - 2rem);
+		margin-bottom: 0;
+		align-self: center;
+	}
+}
+@media screen and (min-width: 1170px) {
+	.about-img::before {
+		content: "";
+		position: absolute;
+		border: 0.5rem solid var(--clr-primary-5);
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		top: -1.5rem;
+		left: -1.5rem;
+		/* z-index: -1; */
+	}
+	.about-img {
+		position: relative;
+	}
+	.about-photo {
+		position: relative;
+	}
+	.about-info {
 		letter-spacing: var(--spacing);
 	}
-	@media screen and (min-width: 992px) {
-		.about-center {
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
-		}
-		.about-img,
-		.about-info {
-			flex: 0 0 calc(50% - 2rem);
-			margin-bottom: 0;
-			align-self: center;
-		}
-	}
-	@media screen and (min-width: 1170px) {
-		.about-img::before {
-			content: "";
-			position: absolute;
-			border: 0.5rem solid var(--clr-primary-5);
-			width: 100%;
-			height: 100%;
-			box-sizing: border-box;
-			top: -1.5rem;
-			left: -1.5rem;
-			/* z-index: -1; */
-		}
-		.about-img {
-			position: relative;
-		}
-		.about-photo {
-			position: relative;
-		}
-		.about-info {
-			letter-spacing: var(--spacing);
-		}
-	}
+}
 
-	/*
+/*
 =============== 
 Contact
 ===============
 */
-	.contact {
-		background: var(--clr-primary-6);
-		box-shadow: var(--dark-shadow);
-	}
-	/* .contact {
+.contact {
+	background: var(--clr-primary-6);
+	box-shadow: var(--dark-shadow);
+}
+/* .contact {
   background: var(--clr-primary-6);
   height: 70vh;
   margin-top: 50px;
 } */
-	.contact-title {
-		color: var(--clr-white);
-		font-size: 2rem;
-	}
-	.contact-title p {
-		color: var(--clr-primary-10);
-		font-size: 1.75rem;
-	}
-	.contact-span {
-		font-size: 5rem;
-		font-family: var(--ff-secondary);
+.contact-title {
+	color: var(--clr-white);
+	font-size: 2rem;
+}
+.contact-title p {
+	color: var(--clr-primary-10);
+	font-size: 1.75rem;
+}
+.contact-span {
+	font-size: 5rem;
+	font-family: var(--ff-secondary);
+}
+.contact-form {
+	display: flex;
+	max-width: 28rem;
+	margin-top: 3.5rem;
+}
+
+.form-control {
+	flex: 1 1 auto;
+	color: var(--clr-grey-5);
+}
+.form-control,
+.btn-submit {
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	font-weight: 300;
+	letter-spacing: var(--spacing);
+	background: var(--clr-white);
+	text-transform: capitalize;
+	border: transparent;
+}
+.form-control::placeholder {
+	color: inherit;
+}
+.btn-submit {
+	font-family: var(--ff-primary);
+	margin-left: 0.5rem;
+	background: var(--clr-primary-8);
+	color: var(--clr-primary-1);
+	cursor: pointer;
+	transition: var(--transition);
+}
+.btn-submit:hover {
+	background: var(--clr-primary-1);
+	color: var(--clr-primary-5);
+}
+@media screen and (min-width: 992px) {
+	.contact-center {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 	.contact-form {
-		display: flex;
-		max-width: 28rem;
-		margin-top: 3.5rem;
-	}
-
-	.form-control {
+		align-self: flex-start;
 		flex: 1 1 auto;
-		color: var(--clr-grey-5);
+		max-width: 100%;
+		padding-left: 2rem;
 	}
-	.form-control,
-	.btn-submit {
-		padding: 0.375rem 0.75rem;
-		font-size: 1rem;
-		line-height: 1.5;
-		font-weight: 300;
-		letter-spacing: var(--spacing);
-		background: var(--clr-white);
-		text-transform: capitalize;
-		border: transparent;
-	}
-	.form-control::placeholder {
-		color: inherit;
-	}
-	.btn-submit {
-		font-family: var(--ff-primary);
-		margin-left: 0.5rem;
-		background: var(--clr-primary-8);
-		color: var(--clr-primary-1);
-		cursor: pointer;
-		transition: var(--transition);
-	}
-	.btn-submit:hover {
-		background: var(--clr-primary-1);
-		color: var(--clr-primary-5);
-	}
-	@media screen and (min-width: 992px) {
-		.contact-center {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-		.contact-form {
-			align-self: flex-start;
-			flex: 1 1 auto;
-			max-width: 100%;
-			padding-left: 2rem;
-		}
-	}
+}
 
-	/* 
+/* 
 ===============
 services
 ===============
  */
 
-	/* 
+/* 
 ==============
 service icon
 ==============
  */
-	.service-card {
-		transition: var(--transition);
-		background: var(--clr-grey-10);
-		box-shadow: var(--light-shadow);
-		margin-bottom: 2rem;
-	}
-	.service-card:hover {
-		box-shadow: var(--dark-shadow);
-		transform: scale(1.02);
-	}
-	.service-img-container {
-		position: relative;
-	}
-	.service-img {
-		height: 15rem;
-		object-fit: cover;
-	}
-	.service-date {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		background: var(--clr-primary-8);
-		margin-bottom: 0;
-		color: var(--clr-primary-1);
-		text-transform: capitalize;
-		padding: 0.25rem 0.5rem;
-	}
-	.service-info {
-		padding: 2.35rem 1.5rem;
-		text-align: center;
-	}
-	.service-footer {
+.service-card {
+	transition: var(--transition);
+	background: var(--clr-grey-10);
+	box-shadow: var(--light-shadow);
+	margin-bottom: 2rem;
+}
+.service-card:hover {
+	box-shadow: var(--dark-shadow);
+	transform: scale(1.02);
+}
+.service-img-container {
+	position: relative;
+}
+.service-img {
+	height: 15rem;
+	object-fit: cover;
+}
+.service-date {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: var(--clr-primary-8);
+	margin-bottom: 0;
+	color: var(--clr-primary-1);
+	text-transform: capitalize;
+	padding: 0.25rem 0.5rem;
+}
+.service-info {
+	padding: 2.35rem 1.5rem;
+	text-align: center;
+}
+.service-footer {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.service-footer p {
+	line-height: 0;
+	margin-bottom: 0;
+	text-transform: capitalize;
+	color: var(--clr-primary-5);
+}
+.service-btn {
+	text-align: center;
+}
+@media screen and (min-width: 768px) {
+	.featured-center {
 		display: flex;
-		justify-content: space-between;
 		flex-wrap: wrap;
-		align-items: center;
+		justify-content: space-between;
 	}
-	.service-footer p {
-		line-height: 0;
-		margin-bottom: 0;
-		text-transform: capitalize;
-		color: var(--clr-primary-5);
+	.service-card {
+		flex: 0 0 calc(50% - 2rem);
 	}
-	.service-btn {
-		text-align: center;
+}
+@media screen and (min-width: 1170px) {
+	.service-card {
+		flex: 0 0 calc(33.333% - 2rem);
 	}
-	@media screen and (min-width: 768px) {
-		.featured-center {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-		.service-card {
-			flex: 0 0 calc(50% - 2rem);
-		}
-	}
-	@media screen and (min-width: 1170px) {
-		.service-card {
-			flex: 0 0 calc(33.333% - 2rem);
-		}
-	}
-	.service-img-container {
-		position: relative;
-	}
-	.service-icon {
-		position: absolute;
-		left: 50%;
-		bottom: 0;
-		font-size: 2rem;
-		color: var(--clr-white);
-		background: var(--clr-primary-5);
-		padding: 0.25rem 0.6rem;
-		border-radius: 50%;
-		transform: translate(-50%, 50%);
-		border: 0.375rem solid var(--clr-white);
-	}
+}
+.service-img-container {
+	position: relative;
+}
+.service-icon {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	font-size: 2rem;
+	color: var(--clr-white);
+	background: var(--clr-primary-5);
+	padding: 0.25rem 0.6rem;
+	border-radius: 50%;
+	transform: translate(-50%, 50%);
+	border: 0.375rem solid var(--clr-white);
+}
 
-	/*
+/*
 =============== 
 Footer
 ===============
 */
-	.footer {
-		background: var(--clr-grey-1);
-		text-align: center;
-		padding-left: 2rem;
-		padding-right: 2rem;
-	}
-	.footer-links,
-	.footer-icons {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 1.5rem;
-		flex-wrap: wrap;
-	}
-	.footer-link {
-		color: var(--clr-white);
-		text-transform: capitalize;
-		font-size: 1rem;
-		margin-right: 1rem;
-		letter-spacing: var(--spacing);
-		transition: var(--transition);
-	}
-	.footer-link:hover {
-		color: var(--clr-primary-5);
-	}
-	.footer-icon {
-		font-size: 2rem;
-		margin-right: 1rem;
-		color: var(--clr-primary-8);
-		transition: var(--transition);
-	}
-	.footer-icon:hover {
-		color: var(--clr-primary-5);
-	}
-	.copyright {
-		text-transform: capitalize;
-		letter-spacing: var(--spacing);
-		color: var(--clr-white);
-	}
-	/* 
+.footer {
+	background: var(--clr-grey-1);
+	text-align: center;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.footer-links,
+.footer-icons {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1.5rem;
+	flex-wrap: wrap;
+}
+.footer-link {
+	color: var(--clr-white);
+	text-transform: capitalize;
+	font-size: 1rem;
+	margin-right: 1rem;
+	letter-spacing: var(--spacing);
+	transition: var(--transition);
+}
+.footer-link:hover {
+	color: var(--clr-primary-5);
+}
+.footer-icon {
+	font-size: 2rem;
+	margin-right: 1rem;
+	color: var(--clr-primary-8);
+	transition: var(--transition);
+}
+.footer-icon:hover {
+	color: var(--clr-primary-5);
+}
+.copyright {
+	text-transform: capitalize;
+	letter-spacing: var(--spacing);
+	color: var(--clr-white);
+}
+/* 
 ===========
 mindfulness meditation post
 ===========
  */
+.post-header {
+	height: 100vh;
+	background: linear-gradient(
+			rgba(0, 255, 255, 0.555),
+			rgba(0, 255, 255, 0.333)
+		),
+		url("../images/image\ _of_meditative_atmosphere.jpeg")
+			center/cover no-repeat fixed;
+	display: grid;
+	align-items: center;
+}
+.meditation-title {
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	font-family: var(--ff-tertiary);
+}
+.meditation-title p {
+	font-size: 2rem;
+	color: white;
+}
+
+.meditation-section {
+	border: solid 7px rgba(0, 255, 255, 0.555);
+	padding: 2.5rem;
+}
+.meditation-section h4 {
+	font-size: 2.3rem;
+}
+.meditation-section p {
+	font-size: 1.35rem;
+}
+.aida-section {
+	border: solid 7px rgba(0, 255, 255, 0.555);
+	padding: 2.5rem;
+}
+.aida-section h2 {
+	text-align: center;
+}
+.aida-section p {
+	font-size: 1.35rem;
+}
+
+.img-1 {
+	height: 100%;
+	object-fit: cover;
+	margin-top: 2rem;
+}
+
+.key-points li {
+	list-style-type: disc;
+	padding: 1rem;
+	font-size: 1.35rem;
+}
+.divider {
+	border-top: 3px dotted #bbb;
+	margin: 0 10rem;
+}
+.info-box p {
+	font-size: 1.35rem;
+}
+.meditation-info-section {
+	border: solid 7px rgba(0, 255, 255, 0.555);
+	padding: 2.5rem;
+	margin-top: 3rem;
+}
+
+.meditation-info-section p {
+	font-size: 1.35rem;
+}
+@media screen and (max-width: 768px) {
 	.post-header {
-		height: 100vh;
 		background: linear-gradient(
-				rgba(0, 255, 255, 0.555),
-				rgba(0, 255, 255, 0.333)
-			),
-			url("../images/image\ _of_meditative_atmosphere.jpeg")
-				center/cover no-repeat fixed;
-		display: grid;
-		align-items: center;
+			135deg,
+			rgba(30, 87, 153, 1) 0%,
+			rgba(167, 47, 181, 1) 0%,
+			rgba(125, 185, 232, 1) 100%
+		);
 	}
-	.meditation-title {
-		font-size: 2rem;
-		color: white;
-		text-align: center;
-		font-family: var(--ff-tertiary);
-	}
-	.meditation-title p {
-		font-size: 2rem;
-		color: white;
-	}
-
 	.meditation-section {
-		border: solid 7px rgba(0, 255, 255, 0.555);
-		padding: 2.5rem;
+		margin: 0.5rem;
 	}
-	.meditation-section h4 {
-		font-size: 2.3rem;
-	}
-	.meditation-section p {
-		font-size: 1.35rem;
-	}
-	.aida-section {
-		border: solid 7px rgba(0, 255, 255, 0.555);
-		padding: 2.5rem;
-	}
-	.aida-section h2 {
-		text-align: center;
-	}
-	.aida-section p {
-		font-size: 1.35rem;
-	}
-
-	.img-1 {
-		height: 100%;
-		object-fit: cover;
-		margin-top: 2rem;
-	}
-
-	.key-points li {
-		list-style-type: disc;
-		padding: 1rem;
-		font-size: 1.35rem;
-	}
-	.divider {
-		border-top: 3px dotted #bbb;
-		margin: 0 10rem;
-	}
-	.info-box p {
-		font-size: 1.35rem;
-	}
-	.meditation-info-section {
-		border: solid 7px rgba(0, 255, 255, 0.555);
-		padding: 2.5rem;
-		margin-top: 3rem;
-	}
-
-	.meditation-info-section p {
-		font-size: 1.35rem;
-	}
-	@media screen and (max-width: 768px) {
-		.post-header {
-			background: linear-gradient(
-				135deg,
-				rgba(30, 87, 153, 1) 0%,
-				rgba(167, 47, 181, 1) 0%,
-				rgba(125, 185, 232, 1) 100%
-			);
-		}
-		.meditation-section {
-			margin: 0.5rem;
-		}
-	}
-	/* 
+}
+/* 
 ============
 article 2
 ============
  */
-	.article-2 {
-		border: solid black 2px;
-		padding: 2rem;
-		margin: 5rem;
-	}
-	.article-2 h2 {
-		text-align: center;
-	}
+.article-2 {
+	border: solid black 2px;
+	padding: 2rem;
+	margin: 5rem;
+}
+.article-2 h2 {
+	text-align: center;
+}
 
-	/* 
+/* 
 	============
 	quote starts
 	============
 	 */
-	.quote {
-		margin-right: 2rem;
-		padding: 2rem;
-		font-size: 2rem;
-		font-family: var(--ff-tertiary);
-		text-align: center;
-	}
+.quote {
+	margin-right: 2rem;
+	padding: 2rem;
+	font-size: 2rem;
+	font-family: var(--ff-tertiary);
+	text-align: center;
+}
 
-	.quote-author {
-		text-align: center;
-		width: 100%;
-		color: black;
-	}
-	/* 
+.quote-author {
+	text-align: center;
+	width: 100%;
+	color: black;
+}
+/* 
 		============
 		info box starts
 		============
 		 */
-	.info-box {
-		border: solid black 2px;
-		padding: 2rem;
-		background: rgba(255, 0, 0, 0.493);
-		color: white;
-		font-size: 1.2rem;
-	}
-	.info-box p {
-		color: white;
-	}
+.info-box {
+	border: solid black 2px;
+	padding: 2rem;
+	background: rgba(255, 0, 0, 0.493);
+	color: white;
+	font-size: 1.2rem;
+}
+.info-box p {
+	color: white;
+}
 
-	/* 
+/* 
 ===================================
 meditation learning section starts
 ==================================
  */
 
+.meditation-learning-img,
+.meditation-learning-info {
+	margin-bottom: 2rem;
+	font-size: 1rem;
+	letter-spacing: var(--spacing);
+}
+.meditation-learning-img-2 {
+	padding-top: 3rem;
+}
+.meditation-info-section h2 {
+	text-align: center;
+}
+.meditation-learning-info p {
+	font-size: 1.35rem;
+}
+.meditation-info-section span {
+	color: var(--clr-primary-5);
+}
+@media screen and (min-width: 992px) {
+	.meditation-learning-center {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
 	.meditation-learning-img,
 	.meditation-learning-info {
-		margin-bottom: 2rem;
-		font-size: 1rem;
-		letter-spacing: var(--spacing);
+		flex: 0 0 calc(50% - 2rem);
+		margin-bottom: 0;
+		align-self: center;
+	}
+}
+@media screen and (min-width: 1170px) {
+	.meditation-learning::before {
+		content: "";
+		position: absolute;
+		border: 0.5rem solid var(--clr-primary-5);
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		top: -1.5rem;
+		left: -1.5rem;
+		/* z-index: -1; */
+	}
+	.meditation-learning-img {
+		position: relative;
+		bottom: 2rem;
 	}
 	.meditation-learning-img-2 {
-		padding-top: 3rem;
+		position: relative;
+		top: 2rem;
 	}
-	.meditation-info-section h2 {
-		text-align: center;
+	.meditation-learning-photo {
+		position: relative;
 	}
-	.meditation-learning-info p {
-		font-size: 1.35rem;
+	.meditation-learning-info {
+		letter-spacing: var(--spacing);
 	}
-	.meditation-info-section span {
-		color: var(--clr-primary-5);
-	}
-	@media screen and (min-width: 992px) {
-		.meditation-learning-center {
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
-		}
-		.meditation-learning-img,
-		.meditation-learning-info {
-			flex: 0 0 calc(50% - 2rem);
-			margin-bottom: 0;
-			align-self: center;
-		}
-	}
-	@media screen and (min-width: 1170px) {
-		.meditation-learning::before {
-			content: "";
-			position: absolute;
-			border: 0.5rem solid var(--clr-primary-5);
-			width: 100%;
-			height: 100%;
-			box-sizing: border-box;
-			top: -1.5rem;
-			left: -1.5rem;
-			/* z-index: -1; */
-		}
-		.meditation-learning-img {
-			position: relative;
-			bottom: 2rem;
-		}
-		.meditation-learning-img-2 {
-			position: relative;
-			top: 2rem;
-		}
-		.meditation-learning-photo {
-			position: relative;
-		}
-		.meditation-learning-info {
-			letter-spacing: var(--spacing);
-		}
-	}
-	/* 
+}
+/* 
 ===================================
 meditation learning section ends
 ==================================
  */
-	/* 
+/* 
 ===================================
 meditation integration section starts
 ==================================
  */
-	.integration-section {
-		border: solid 7px rgba(0, 255, 255, 0.555);
-		padding: 2rem;
-		margin-bottom: 3rem;
-	}
-	.integration-section p {
-		font-size: 1.35rem;
-	}
-	.integration-section span {
-		color: var(--clr-primary-5);
-	}
-	/* 
+.integration-section {
+	border: solid 7px rgba(0, 255, 255, 0.555);
+	padding: 2rem;
+	margin-bottom: 3rem;
+}
+.integration-section p {
+	font-size: 1.35rem;
+}
+.integration-section span {
+	color: var(--clr-primary-5);
+}
+/* 
 ===================================
 meditation integration section ends
 ==================================
  */
-	/* 
+/* 
 ===================================
 obstacles section begins
 ==================================
  */
-	.obstacles-section {
-		margin: 3rem;
-	}
-	.obstacles-section p {
-		font-size: 1.35rem;
-	}
-	.obstacles-section span {
-		color: var(--clr-primary-5);
-	}
-	/* 
+.obstacles-section {
+	margin: 3rem;
+}
+.obstacles-section p {
+	font-size: 1.35rem;
+}
+.obstacles-section span {
+	color: var(--clr-primary-5);
+}
+/* 
 ===================================
 obstacles section ends
 ==================================
  */
-	/* 
+/* 
 ===================================
 chakras section begins
 ==================================
  */
-	.chakra-btn a {
-		color: white;
-	}
-	.chakra-btn {
-		margin-bottom: 3rem;
-		display: block;
-		width: 100%;
-	}
-	.chakras {
-		margin: 3rem;
-	}
+.chakra-btn a {
+	color: white;
+}
+.chakra-btn {
+	margin-bottom: 3rem;
+	display: block;
+	width: 100%;
+}
+.chakras {
+	margin: 3rem;
+}
 
-	.chakras p {
-		font-size: 1.55rem;
-	}
-	/* 
+.chakras p {
+	font-size: 1.55rem;
+}
+/* 
 ===================================
 chakras section ends
 ==================================
  */
 
-	/* 
+/* 
 =============================
 mindfulness meditation post ends
 =============================
  */
-	/* 
+/* 
 ==============
 root chakra post
 =============
  */
+.chakra-header {
+	height: 100vh;
+	background: linear-gradient(
+			rgba(122, 6, 6, 0.795),
+			rgba(202, 7, 7, 0.418)
+		),
+		url("../images/root-chakra.jpg") center/cover no-repeat
+			fixed;
+	display: grid;
+	align-items: center;
+}
+
+.root-heading {
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	font-family: var(--ff-tertiary);
+}
+
+.root-traits {
+	border: dotted 4px rgb(255, 0, 0);
+
+	outline: 4px solid rgb(255, 0, 0);
+	outline-offset: 1.5rem;
+	padding: 1rem;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+	text-align: center;
+}
+
+.root-traits h4 {
+	font-size: 2rem;
+	color: rgb(255, 0, 0);
+	text-align: center;
+}
+.root-traits h4 span {
+	font-size: 2rem;
+}
+.root-traits span {
+	font-weight: bold;
+	color: red;
+}
+.root-section {
+	padding: 1.35rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+.root-section p {
+	font-size: 1.35rem;
+}
+.foundation {
+	border: solid red 3px;
+	padding: 2rem;
+}
+.foundation p {
+	font-size: 1.35rem;
+}
+.foundation span {
+	color: red;
+}
+.root-section span {
+	color: red;
+}
+.root-btn a {
+	color: white;
+}
+.root-btn {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.root-btn-center {
+	float: right;
+	background: red;
+}
+.root-btn-center a {
+	color: white;
+}
+.root-stones-section {
+	padding-top: 5rem;
+	text-align: center;
+}
+
+.root-stones-section h2 {
+	padding: 2rem;
+}
+.root-stones-section span {
+	color: red;
+}
+.article-stones p {
+	font-size: 1.35rem;
+}
+.music-root-section {
+	border: solid red 3px;
+	margin: 7rem auto;
+	padding: 1.35rem;
+	padding-bottom: 3rem;
+}
+.music-root-section h2 {
+	text-align: center;
+}
+.music-root-section p {
+	font-size: 1.35rem;
+}
+.music-root-section span {
+	color: red;
+}
+.essential-article p {
+	font-size: 1.35rem;
+}
+.essential-article h2 {
+	text-align: center;
+}
+.essential-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.essential-span {
+	color: red;
+}
+.essential-root-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border: solid red 3px;
+}
+.essential-img-section p {
+	font-size: 1.5rem;
+	padding-top: 2rem;
+}
+
+.clear-essential {
+	float: left;
+}
+.clear p {
+	clear: both;
+}
+.essential-section span {
+	color: red;
+}
+.essential-root-section p {
+	font-size: 1.45rem;
+	padding-top: 2rem;
+}
+.essential-root-section span {
+	color: rgb(255, 0, 0);
+}
+
+.key-points-bold {
+	font-weight: bolder;
+}
+
+.responsive {
+	padding-bottom: 56.25%;
+	position: relative;
+	width: 100%;
+	height: 0;
+}
+.responsive iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.chakra-stones-img {
+	padding-bottom: 3rem;
+}
+@media screen and (max-width: 768px) {
 	.chakra-header {
-		height: 100vh;
 		background: linear-gradient(
-				rgba(122, 6, 6, 0.795),
-				rgba(202, 7, 7, 0.418)
-			),
-			url("../images/root-chakra.jpg") center/cover
-				no-repeat fixed;
-		display: grid;
-		align-items: center;
-	}
-
-	.root-heading {
-		font-size: 2rem;
-		color: white;
-		text-align: center;
-		font-family: var(--ff-tertiary);
-	}
-
-	.root-traits {
-		border: dotted 4px rgb(255, 0, 0);
-
-		outline: 4px solid rgb(255, 0, 0);
-		outline-offset: 1.5rem;
-		padding: 1rem;
-		margin-bottom: 4rem;
-		margin-top: 4rem;
-		text-align: center;
-	}
-
-	.root-traits h4 {
-		font-size: 2rem;
-		color: rgb(255, 0, 0);
-		text-align: center;
-	}
-	.root-traits h4 span {
-		font-size: 2rem;
-	}
-	.root-traits span {
-		font-weight: bold;
-		color: red;
-	}
-	.root-section {
-		padding: 1.35rem;
-		margin-top: 3rem;
-		margin-bottom: 3rem;
-	}
-	.root-section p {
-		font-size: 1.35rem;
-	}
-	.foundation {
-		border: solid red 3px;
-		padding: 2rem;
-	}
-	.foundation p {
-		font-size: 1.35rem;
-	}
-	.foundation span {
-		color: red;
-	}
-	.root-section span {
-		color: red;
-	}
-	.root-btn a {
-		color: white;
-	}
-	.root-btn {
-		display: grid;
-		grid-template-columns: 1fr;
-	}
-	.root-btn-center {
-		float: right;
-		background: red;
-	}
-	.root-btn-center a {
-		color: white;
-	}
-	.root-stones-section {
-		padding-top: 5rem;
-		text-align: center;
-	}
-
-	.root-stones-section h2 {
-		padding: 2rem;
-	}
-	.root-stones-section span {
-		color: red;
-	}
-	.article-stones p {
-		font-size: 1.35rem;
-	}
-	.music-root-section {
-		border: solid red 3px;
-		margin: 7rem auto;
-		padding: 1.35rem;
-		padding-bottom: 3rem;
-	}
-	.music-root-section h2 {
-		text-align: center;
-	}
-	.music-root-section p {
-		font-size: 1.35rem;
-	}
-	.music-root-section span {
-		color: red;
-	}
-	.essential-article p {
-		font-size: 1.35rem;
-	}
-	.essential-article h2 {
-		text-align: center;
-	}
-	.essential-img {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 50%;
-	}
-	.essential-span {
-		color: red;
+			rgba(50, 6, 122, 0.795),
+			rgba(202, 7, 7, 0.418)
+		);
 	}
 	.essential-root-section {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		border: solid red 3px;
+		grid-template-columns: 1fr;
+		padding: 2rem;
 	}
-	.essential-img-section p {
-		font-size: 1.5rem;
-		padding-top: 2rem;
-	}
-
-	.clear-essential {
-		float: left;
-	}
-	.clear p {
-		clear: both;
-	}
-	.essential-section span {
-		color: red;
-	}
-	.essential-root-section p {
-		font-size: 1.45rem;
-		padding-top: 2rem;
-	}
-	.essential-root-section span {
-		color: rgb(255, 0, 0);
-	}
-
-	.key-points-bold {
-		font-weight: bolder;
-	}
-
-	.responsive {
-		padding-bottom: 56.25%;
-		position: relative;
-		width: 100%;
-		height: 0;
-	}
-	.responsive iframe {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-	}
-	.chakra-stones-img {
-		padding-bottom: 3rem;
-	}
-	@media screen and (max-width: 768px) {
-		.chakra-header {
-			background: linear-gradient(
-				rgba(50, 6, 122, 0.795),
-				rgba(202, 7, 7, 0.418)
-			);
-		}
-		.essential-root-section {
-			display: grid;
-			grid-template-columns: 1fr;
-			padding: 2rem;
-		}
-	}
-	/* 
+}
+/* 
 ==============
 Root chakra post ends
 =============
  */
-	/* 
+/* 
 ==============
 sacral chakra post
 =============
  */
 
+.sacral-header {
+	height: 100vh;
+	background: linear-gradient(
+		rgba(122, 105, 6, 0.795),
+		rgba(202, 7, 7, 0.418)
+	);
+}
+
+.sacral-title {
+	font-family: var(--ff-tertiary);
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 25rem;
+}
+.sacral-traits {
+	border: dotted 4px rgb(255, 166, 0);
+
+	outline: 4px solid rgb(255, 166, 0);
+	outline-offset: 1.5rem;
+	padding: 1rem;
+
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+
+	text-align: center;
+}
+.sacral-traits h4 {
+	font-size: 2rem;
+	color: rgb(255, 166, 0);
+}
+.sacral-traits h4 span {
+	font-size: 2rem;
+}
+.sacral-traits span {
+	font-weight: bold;
+	color: rgb(255, 166, 0);
+}
+
+.sacral-section h2 {
+	font-size: 3rem;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+.sacral-section span {
+	color: rgb(255, 166, 0);
+}
+.sacral-section p {
+	color: black;
+	text-transform: var(--spacing);
+	font-size: 1.35rem;
+}
+.sacral-meditation {
+	padding: 2rem;
+	margin: 0 1rem;
+
+	border: rgb(255, 166, 0) solid 3px;
+}
+.sacral-meditation-article p {
+	color: rgb(82, 82, 82);
+	font-size: 1.35rem;
+}
+.sacral-meditation-article h2 {
+	text-align: center;
+}
+
+.sacral-meditation-article h2 span {
+	display: block;
+	margin: 0 auto;
+}
+.sacral-meditation-article li {
+	padding: 0.75rem;
+}
+.sacral-meditation-article span {
+	color: rgb(255, 166, 0);
+	margin: 5rem;
+}
+.sacral-stones-section {
+	padding-top: 5rem;
+	text-align: center;
+}
+
+.sacral-stones-section h2 {
+	padding: 2rem;
+}
+.sacral-stones-section span {
+	color: rgb(255, 166, 0);
+}
+.sacral-balancing {
+	margin-top: 7rem;
+	margin-bottom: 3rem;
+	padding: 2rem;
+	background: rgba(255, 166, 0, 0.308);
+}
+.balancing-article h2 {
+	text-align: center;
+}
+.balancing-article span {
+	color: rgb(255, 166, 0);
+}
+.balancing-article p {
+	font-size: 1.35rem;
+	color: rgb(82, 82, 82);
+}
+.music-sacral-section {
+	border: solid rgb(255, 166, 0) 3px;
+	margin: 7rem auto;
+	padding: 1.35rem;
+	padding-bottom: 3rem;
+}
+.music-sacral-section h2 {
+	text-align: center;
+}
+.music-sacral-section p {
+	font-size: 1.35rem;
+}
+
+.sacral-btn {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.sacral-btn-center {
+	float: right;
+	background: rgb(255, 166, 0);
+}
+.sacral-btn-center a {
+	color: white;
+}
+.essential-sacral-section {
+	display: grid;
+	grid-template-columns: 1fr;
+	border: solid rgb(255, 166, 0) 3px;
+}
+.essential-sacral-section p {
+	font-size: 1.45rem;
+	padding-top: 2rem;
+}
+.essential-sacral-section span {
+	color: rgb(255, 166, 0);
+}
+
+@media screen and (min-width: 768px) {
+	.sacral-traits h4 span {
+		font-size: 2rem;
+		color: rgb(255, 166, 0);
+	}
 	.sacral-header {
 		height: 100vh;
 		background: linear-gradient(
-			rgba(122, 105, 6, 0.795),
-			rgba(202, 7, 7, 0.418)
-		);
+				rgba(122, 105, 6, 0.795),
+				rgba(202, 7, 7, 0.418)
+			),
+			url("../images/chakra-4354545_1280.jpg")
+				center/cover no-repeat fixed;
+		display: grid;
+		align-items: center;
 	}
-
 	.sacral-title {
-		font-family: var(--ff-tertiary);
 		font-size: 2rem;
 		color: white;
 		text-align: center;
 		position: relative;
-		top: 25rem;
-	}
-	.sacral-traits {
-		border: dotted 4px rgb(255, 166, 0);
-
-		outline: 4px solid rgb(255, 166, 0);
-		outline-offset: 1.5rem;
-		padding: 1rem;
-
-		margin-bottom: 4rem;
-		margin-top: 4rem;
-
-		text-align: center;
-	}
-	.sacral-traits h4 {
-		font-size: 2rem;
-		color: rgb(255, 166, 0);
-	}
-	.sacral-traits h4 span {
-		font-size: 2rem;
-	}
-	.sacral-traits span {
-		font-weight: bold;
-		color: rgb(255, 166, 0);
-	}
-
-	.sacral-section h2 {
-		font-size: 3rem;
-		padding-bottom: 2rem;
-		text-align: center;
-	}
-	.sacral-section span {
-		color: rgb(255, 166, 0);
-	}
-	.sacral-section p {
-		color: black;
-		text-transform: var(--spacing);
-		font-size: 1.35rem;
-	}
-	.sacral-meditation {
-		padding: 2rem;
-		margin: 0 1rem;
-
-		border: rgb(255, 166, 0) solid 3px;
-	}
-	.sacral-meditation-article p {
-		color: rgb(82, 82, 82);
-		font-size: 1.35rem;
-	}
-	.sacral-meditation-article h2 {
-		text-align: center;
-	}
-
-	.sacral-meditation-article h2 span {
-		display: block;
-		margin: 0 auto;
-	}
-	.sacral-meditation-article li {
-		padding: 0.75rem;
-	}
-	.sacral-meditation-article span {
-		color: rgb(255, 166, 0);
-		margin: 5rem;
-	}
-	.sacral-stones-section {
-		padding-top: 5rem;
-		text-align: center;
-	}
-
-	.sacral-stones-section h2 {
-		padding: 2rem;
-	}
-	.sacral-stones-section span {
-		color: rgb(255, 166, 0);
-	}
-	.sacral-balancing {
-		margin-top: 7rem;
-		margin-bottom: 3rem;
-		padding: 2rem;
-		background: rgba(255, 166, 0, 0.308);
-	}
-	.balancing-article h2 {
-		text-align: center;
-	}
-	.balancing-article span {
-		color: rgb(255, 166, 0);
-	}
-	.balancing-article p {
-		font-size: 1.35rem;
-		color: rgb(82, 82, 82);
-	}
-	.music-sacral-section {
-		border: solid rgb(255, 166, 0) 3px;
-		margin: 7rem auto;
-		padding: 1.35rem;
-		padding-bottom: 3rem;
-	}
-	.music-sacral-section h2 {
-		text-align: center;
-	}
-	.music-sacral-section p {
-		font-size: 1.35rem;
-	}
-
-	.sacral-btn {
-		display: grid;
-		grid-template-columns: 1fr;
-	}
-	.sacral-btn-center {
-		float: right;
-		background: rgb(255, 166, 0);
-	}
-	.sacral-btn-center a {
-		color: white;
+		top: 15rem;
 	}
 	.essential-sacral-section {
 		display: grid;
-		grid-template-columns: 1fr;
-		border: solid rgb(255, 166, 0) 3px;
+		grid-template-columns: 1fr 1fr;
+		padding: 2rem;
 	}
-	.essential-sacral-section p {
-		font-size: 1.45rem;
-		padding-top: 2rem;
-	}
-	.essential-sacral-section span {
-		color: rgb(255, 166, 0);
-	}
+}
 
-	@media screen and (min-width: 768px) {
-		.sacral-traits h4 span {
-			font-size: 2rem;
-			color: rgb(255, 166, 0);
-		}
-		.sacral-header {
-			height: 100vh;
-			background: linear-gradient(
-					rgba(122, 105, 6, 0.795),
-					rgba(202, 7, 7, 0.418)
-				),
-				url("../images/chakra-4354545_1280.jpg")
-					center/cover no-repeat fixed;
-			display: grid;
-			align-items: center;
-		}
-		.sacral-title {
-			font-size: 2rem;
-			color: white;
-			text-align: center;
-			position: relative;
-			top: 15rem;
-		}
-		.essential-sacral-section {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			padding: 2rem;
-		}
-	}
-
-	/* 
+/* 
 	==============
 	sacral post ends
 	=============
 	 */
-	/* 
+/* 
 ========================
 solar plexus post begins
 ========================
  */
 
-	.solar-header {
-		height: 100vh;
-		background: linear-gradient(
-				rgba(87, 74, 0, 0.637),
-				rgba(64, 87, 0, 0.479)
-			),
-			url("../images/solar-plexus-chakra.jpg");
-	}
-	.solar-title {
-		font-family: var(--ff-tertiary);
-		font-size: 2rem;
-		color: white;
-		text-align: center;
-		position: relative;
-		top: 25rem;
-	}
-	.solar-traits {
-		border: dotted 4px rgb(255, 166, 0);
+.solar-header {
+	height: 100vh;
+	background: linear-gradient(
+			rgba(87, 74, 0, 0.637),
+			rgba(64, 87, 0, 0.479)
+		),
+		url("../images/solar-plexus-chakra.jpg");
+}
+.solar-title {
+	font-family: var(--ff-tertiary);
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 25rem;
+}
+.solar-traits {
+	border: dotted 4px rgb(255, 166, 0);
 
-		outline: 4px solid rgb(255, 166, 0);
-		outline-offset: 1.5rem;
-		padding: 1rem;
-		margin: 0 1rem;
-		margin-bottom: 4rem;
-		margin-top: 4rem;
-		text-align: center;
-	}
-	.solar-traits h4 {
-		font-size: 2rem;
-		color: rgb(255, 166, 0);
-	}
-	.solar-traits h4 span {
-		font-size: 2rem;
-	}
+	outline: 4px solid rgb(255, 166, 0);
+	outline-offset: 1.5rem;
+	padding: 1rem;
+	margin: 0 1rem;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+	text-align: center;
+}
+.solar-traits h4 {
+	font-size: 2rem;
+	color: rgb(255, 166, 0);
+}
+.solar-traits h4 span {
+	font-size: 2rem;
+}
+.solar-traits span {
+	font-weight: bold;
+	color: rgb(255, 166, 0);
+}
+.solar-article h2 {
+	text-align: center;
+}
+.solar-info {
+	margin: 5rem auto;
+}
+.solar-info span {
+	color: rgb(255, 166, 0);
+}
+.solar-article span {
+	color: rgb(255, 166, 0);
+}
+.solar-info p {
+	font-size: 1.35rem;
+}
+.solar-meditation {
+	padding: 1rem;
+	margin: 5rem 1rem;
+
+	outline: rgb(255, 166, 0) solid 3px;
+	outline-offset: 2rem;
+}
+.solar-meditation-article p {
+	color: rgb(82, 82, 82);
+	font-size: 1.35rem;
+}
+.solar-meditation h2 {
+	text-align: center;
+}
+
+.solar-meditation-article h2 span {
+	display: block;
+	margin: 0 auto;
+}
+.solar-meditation-article li {
+	padding: 0.75rem;
+}
+.solar-meditation-article span {
+	color: rgb(255, 166, 0);
+	margin: 5rem;
+}
+.solar-btn {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.solar-btn-center {
+	float: right;
+	background: rgb(255, 166, 0);
+}
+.solar-btn-center a {
+	color: white;
+}
+.solar-stones-section {
+	padding-top: 5rem;
+	text-align: center;
+}
+
+.solar-stones-section h2 {
+	padding: 2rem;
+}
+.solar-stones-section span {
+	color: rgb(255, 166, 0);
+}
+@media screen and (min-width: 768px) {
 	.solar-traits span {
-		font-weight: bold;
-		color: rgb(255, 166, 0);
+		font-size: 1rem;
 	}
-	.solar-article h2 {
+	.solar-meditation-article h2 {
 		text-align: center;
-	}
-	.solar-info {
-		margin: 5rem auto;
-	}
-	.solar-info span {
-		color: rgb(255, 166, 0);
-	}
-	.solar-article span {
-		color: rgb(255, 166, 0);
-	}
-	.solar-info p {
-		font-size: 1.35rem;
-	}
-	.solar-meditation {
-		padding: 1rem;
-		margin: 5rem 1rem;
-
-		outline: rgb(255, 166, 0) solid 3px;
-		outline-offset: 2rem;
-	}
-	.solar-meditation-article p {
-		color: rgb(82, 82, 82);
-		font-size: 1.35rem;
-	}
-	.solar-meditation h2 {
-		text-align: center;
-	}
-
-	.solar-meditation-article h2 span {
-		display: block;
-		margin: 0 auto;
-	}
-	.solar-meditation-article li {
-		padding: 0.75rem;
-	}
-	.solar-meditation-article span {
-		color: rgb(255, 166, 0);
-		margin: 5rem;
-	}
-	.solar-btn {
-		display: grid;
-		grid-template-columns: 1fr;
-	}
-	.solar-btn-center {
-		float: right;
-		background: rgb(255, 166, 0);
-	}
-	.solar-btn-center a {
-		color: white;
-	}
-	.solar-stones-section {
-		padding-top: 5rem;
-		text-align: center;
-	}
-
-	.solar-stones-section h2 {
-		padding: 2rem;
-	}
-	.solar-stones-section span {
-		color: rgb(255, 166, 0);
-	}
-	@media screen and (min-width: 768px) {
-		.solar-traits span {
-			font-size: 1rem;
-		}
-		.solar-meditation-article h2 {
-			text-align: center;
-		}
 	}
 }
 /* 
