@@ -255,6 +255,7 @@ Navbar
 .show-links {
 	height: 315px;
 }
+
 @media screen and (min-width: 992px) {
 	/* hide toggle btn */
 	.nav-logo {
@@ -516,6 +517,11 @@ h3 {
 	.blog-hero {
 		background: url("../images/nature.jpg") center/cover
 			no-repeat;
+	}
+	.blog-quote {
+		margin: 3rem 1rem;
+		text-align: center;
+		font-family: var(--ff-tertiary);
 	}
 }
 
