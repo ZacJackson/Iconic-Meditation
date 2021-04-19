@@ -746,7 +746,6 @@ mindfulness meditation post
 .meditation-section {
 	border: solid 7px rgba(0, 255, 255, 0.555);
 	padding: 2.5rem;
-	margin: 3rem;
 }
 .meditation-section h4 {
 	font-size: 2.3rem;
@@ -799,6 +798,9 @@ mindfulness meditation post
 			rgba(167, 47, 181, 1) 0%,
 			rgba(125, 185, 232, 1) 100%
 		);
+	}
+	.meditation-section {
+		margin: 0.5rem;
 	}
 }
 /* 
@@ -1005,13 +1007,12 @@ root chakra post
 	display: grid;
 	align-items: center;
 }
-.root-heading {
-	font-family: var(--ff-tertiary);
-}
+
 .root-heading {
 	font-size: 2rem;
 	color: white;
 	text-align: center;
+	font-family: var(--ff-tertiary);
 }
 
 .root-traits {
@@ -1216,22 +1217,22 @@ sacral chakra post
 	color: rgb(255, 166, 0);
 }
 .sacral-traits h4 span {
-	font-size: 1rem;
+	font-size: 2rem;
 }
 .sacral-traits span {
 	font-weight: bold;
 	color: rgb(255, 166, 0);
 }
 
-.sacral-article h2 {
+.sacral-section h2 {
 	font-size: 3rem;
 	padding-bottom: 2rem;
 	text-align: center;
 }
-.sacral-article span {
+.sacral-section span {
 	color: rgb(255, 166, 0);
 }
-.sacral-article p {
+.sacral-section p {
 	color: black;
 	text-transform: var(--spacing);
 	font-size: 1.35rem;
@@ -1341,5 +1342,68 @@ sacral chakra post
 /* 
 	==============
 	sacral post ends
+	=============
+	 */
+/* 
+	========================
+	solar plexus post begins
+	========================
+	 */
+
+.solar-header {
+	height: 100vh;
+	background: linear-gradient(
+			rgba(255, 217, 0, 0.637),
+			rgba(187, 255, 0, 0.479)
+		),
+		url("../images/solar-plexus-chakra.jpg");
+}
+.solar-title {
+	font-family: var(--ff-tertiary);
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 25rem;
+}
+.solar-traits {
+	border: dotted 4px rgb(255, 166, 0);
+
+	outline: 4px solid rgb(255, 166, 0);
+	outline-offset: 1.5rem;
+	padding: 1rem;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+	text-align: center;
+}
+.solar-traits h4 {
+	font-size: 2rem;
+	color: rgb(255, 166, 0);
+}
+.solar-traits h4 span {
+	font-size: 2rem;
+}
+.solar-traits span {
+	font-weight: bold;
+	color: rgb(255, 166, 0);
+}
+.solar-article h2 {
+	text-align: center;
+}
+.solar-article span {
+	color: rgb(255, 166, 0);
+}
+.solar-info p {
+	font-size: 1.35rem;
+}
+@media screen and (min-width: 768px) {
+	.solar-traits span {
+		font-size: 1rem;
+	}
+}
+
+/* 
+	==============
+	solar plexus post ends
 	=============
 	 */
