@@ -377,6 +377,7 @@ Hero
 blog
 ==========
  */
+
 .blog {
 	background: var(--clr-grey-10);
 }
@@ -384,6 +385,10 @@ blog
 	text-align: center;
 	text-decoration: underline var(--clr-primary-5);
 	margin-bottom: 1.5rem;
+	font-family: var(--ff-secondary);
+}
+.blog-title h2 {
+	font-size: 5rem;
 }
 .card {
 	height: 27rem;
@@ -459,6 +464,26 @@ blog
 	padding: 2.35rem 1.5rem;
 	text-align: center;
 }
+.my-blog {
+	margin: 3rem;
+}
+.my-blog h2 {
+	text-align: center;
+	font-family: var(--ff-secondary);
+	font-size: 4rem;
+}
+.my-blog p {
+	text-align: center;
+	font-family: var(--ff-primary);
+	font-size: 1.35rem;
+	letter-spacing: var(--spacing);
+}
+.blog-quote {
+	margin: 10rem 3rem;
+	text-align: center;
+	font-family: var(--ff-tertiary);
+}
+
 /*
 =============== 
 About
