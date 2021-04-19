@@ -1073,15 +1073,15 @@ root chakra post
 .root-btn-center a {
 	color: white;
 }
-.stones-section {
+.root-stones-section {
 	padding-top: 5rem;
 	text-align: center;
 }
 
-.stones-section h2 {
+.root-stones-section h2 {
 	padding: 2rem;
 }
-.stones-section span {
+.root-stones-section span {
 	color: red;
 }
 .article-stones p {
@@ -1208,8 +1208,10 @@ sacral chakra post
 	outline: 4px solid rgb(255, 166, 0);
 	outline-offset: 1.5rem;
 	padding: 1rem;
+
 	margin-bottom: 4rem;
 	margin-top: 4rem;
+
 	text-align: center;
 }
 .sacral-traits h4 {
@@ -1238,28 +1240,40 @@ sacral chakra post
 	font-size: 1.35rem;
 }
 .sacral-meditation {
-	padding: 1rem;
-	outline: rgb(255, 166, 0) solid 3px;
-	outline-offset: 2rem;
+	padding: 2rem;
+	margin: 0 1rem;
+
+	border: rgb(255, 166, 0) solid 3px;
 }
-.meditation-article p {
+.sacral-meditation-article p {
 	color: rgb(82, 82, 82);
 	font-size: 1.35rem;
 }
-.meditation-article h2 {
+.sacral-meditation-article h2 {
 	text-align: center;
 }
 
-.meditation-article h2 span {
+.sacral-meditation-article h2 span {
 	display: block;
 	margin: 0 auto;
 }
-.meditation-article li {
+.sacral-meditation-article li {
 	padding: 0.75rem;
 }
-.meditation-article span {
+.sacral-meditation-article span {
 	color: rgb(255, 166, 0);
 	margin: 5rem;
+}
+.sacral-stones-section {
+	padding-top: 5rem;
+	text-align: center;
+}
+
+.sacral-stones-section h2 {
+	padding: 2rem;
+}
+.sacral-stones-section span {
+	color: rgb(255, 166, 0);
 }
 .sacral-balancing {
 	margin-top: 7rem;
@@ -1303,7 +1317,7 @@ sacral chakra post
 }
 .essential-sacral-section {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	border: solid rgb(255, 166, 0) 3px;
 }
 .essential-sacral-section p {
@@ -1337,6 +1351,11 @@ sacral chakra post
 		position: relative;
 		top: 15rem;
 	}
+	.essential-sacral-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 2rem;
+	}
 }
 
 /* 
@@ -1353,8 +1372,8 @@ sacral chakra post
 .solar-header {
 	height: 100vh;
 	background: linear-gradient(
-			rgba(255, 217, 0, 0.637),
-			rgba(187, 255, 0, 0.479)
+			rgba(87, 74, 0, 0.637),
+			rgba(64, 87, 0, 0.479)
 		),
 		url("../images/solar-plexus-chakra.jpg");
 }
@@ -1372,6 +1391,7 @@ sacral chakra post
 	outline: 4px solid rgb(255, 166, 0);
 	outline-offset: 1.5rem;
 	padding: 1rem;
+	margin: 0 1rem;
 	margin-bottom: 4rem;
 	margin-top: 4rem;
 	text-align: center;
@@ -1390,15 +1410,72 @@ sacral chakra post
 .solar-article h2 {
 	text-align: center;
 }
+.solar-info {
+	margin: 5rem auto;
+}
+.solar-info span {
+	color: rgb(255, 166, 0);
+}
 .solar-article span {
 	color: rgb(255, 166, 0);
 }
 .solar-info p {
 	font-size: 1.35rem;
 }
+.solar-meditation {
+	padding: 1rem;
+	margin: 5rem 1rem;
+
+	outline: rgb(255, 166, 0) solid 3px;
+	outline-offset: 2rem;
+}
+.solar-meditation-article p {
+	color: rgb(82, 82, 82);
+	font-size: 1.35rem;
+}
+.solar-meditation h2 {
+	text-align: center;
+}
+
+.solar-meditation-article h2 span {
+	display: block;
+	margin: 0 auto;
+}
+.solar-meditation-article li {
+	padding: 0.75rem;
+}
+.solar-meditation-article span {
+	color: rgb(255, 166, 0);
+	margin: 5rem;
+}
+.solar-btn {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.solar-btn-center {
+	float: right;
+	background: rgb(255, 166, 0);
+}
+.solar-btn-center a {
+	color: white;
+}
+.solar-stones-section {
+	padding-top: 5rem;
+	text-align: center;
+}
+
+.solar-stones-section h2 {
+	padding: 2rem;
+}
+.solar-stones-section span {
+	color: rgb(255, 166, 0);
+}
 @media screen and (min-width: 768px) {
 	.solar-traits span {
 		font-size: 1rem;
+	}
+	.solar-meditation-article h2 {
+		text-align: center;
 	}
 }
 
