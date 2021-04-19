@@ -518,10 +518,8 @@ h3 {
 		background: url("../images/nature.jpg") center/cover
 			no-repeat;
 	}
-	.blog-quote {
-		margin: 0 auto;
-		text-align: center;
-		font-family: var(--ff-tertiary);
+	.blog-quote h2,
+	h3 {
 		font-size: 1.5rem;
 	}
 }
