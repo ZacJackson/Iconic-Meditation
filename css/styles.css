@@ -378,9 +378,7 @@ blog
 ==========
  */
 
-.blog {
-	background: var(--clr-grey-10);
-}
+
 .blog-title {
 	text-align: center;
 	text-decoration: underline var(--clr-primary-5);
@@ -483,6 +481,44 @@ blog
 	text-align: center;
 	font-family: var(--ff-tertiary);
 }
+.blog-quote h2, h3{
+	font-size: 3rem;
+}
+.blog-quote p{
+	font-size: 4rem;
+	font-family: var(--ff-secondary);
+}
+.blog-hero {
+	height: 100vh;
+	background: var(--clr-primary-5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.blog-banner {
+	text-align: center;
+	color: var(--clr-white);
+	padding: 0 3 rem;
+}
+.blog-banner h1 {
+	text-transform: uppercase;
+	font-family: var(--ff-secondary)
+}
+.blog-banner p {
+	max-width: 35rem;
+	margin-left: auto;
+	margin-right: auto;
+	color: var(--clr-white);
+	letter-spacing: var(--spacing);
+	font-family: var(--ff-tertiary);
+	font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+	.blog-hero {
+		background: 
+			url("../images/nature.jpg")
+				center/cover no-repeat;
+	}
 
 /*
 =============== 
@@ -802,6 +838,8 @@ mindfulness meditation post
 }
 .divider {
 	border-top: 3px dotted #bbb;
+	margin: 0 10rem;
+	
 }
 .info-box p {
 	font-size: 1.35rem;
@@ -1389,10 +1427,10 @@ sacral chakra post
 	=============
 	 */
 /* 
-	========================
-	solar plexus post begins
-	========================
-	 */
+========================
+solar plexus post begins
+========================
+ */
 
 .solar-header {
 	height: 100vh;
@@ -1503,9 +1541,8 @@ sacral chakra post
 		text-align: center;
 	}
 }
-
 /* 
-	==============
-	solar plexus post ends
-	=============
-	 */
+========================
+solar plexus post ends
+========================
+ */
