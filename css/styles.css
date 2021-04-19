@@ -476,7 +476,7 @@ blog
 	letter-spacing: var(--spacing);
 }
 .blog-quote {
-	margin: 10rem 3rem;
+	margin: 7rem 3rem;
 	text-align: center;
 	font-family: var(--ff-tertiary);
 }
