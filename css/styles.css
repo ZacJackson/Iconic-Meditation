@@ -736,12 +736,23 @@ mindfulness meditation post
 	font-size: 2rem;
 	color: white;
 	text-align: center;
+	font-family: var(--ff-tertiary);
+}
+.meditation-title p {
+	font-size: 2rem;
+	color: white;
 }
 
 .meditation-section {
 	border: solid 7px rgba(0, 255, 255, 0.555);
 	padding: 2.5rem;
 	margin: 3rem;
+}
+.meditation-section h4 {
+	font-size: 2.3rem;
+}
+.meditation-section p {
+	font-size: 1.35rem;
 }
 .aida-section {
 	border: solid 7px rgba(0, 255, 255, 0.555);
@@ -763,7 +774,7 @@ mindfulness meditation post
 .key-points li {
 	list-style-type: disc;
 	padding: 1rem;
-	font-size: 1.5rem;
+	font-size: 1.35rem;
 }
 .divider {
 	border-top: 3px dotted #bbb;
