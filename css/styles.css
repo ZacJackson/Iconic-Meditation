@@ -519,9 +519,10 @@ h3 {
 			no-repeat;
 	}
 	.blog-quote {
-		margin: 3rem 1rem;
+		margin: 0 auto;
 		text-align: center;
 		font-family: var(--ff-tertiary);
+		font-size: 2rem;
 	}
 }
 
