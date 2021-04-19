@@ -732,23 +732,26 @@ mindfulness meditation post
 	display: grid;
 	align-items: center;
 }
-.post-title-1 {
+.meditation-title {
 	font-size: 2rem;
 	color: white;
 	text-align: center;
 }
 
-.section-center {
-	padding: 2rem;
+.meditation-section {
+	border: solid 7px rgba(0, 255, 255, 0.555);
+	padding: 2.5rem;
+	margin: 3rem;
 }
-.article-1 h2 {
-	padding: 2rem;
+.aida-section {
+	border: solid 7px rgba(0, 255, 255, 0.555);
+	padding: 2.5rem;
 }
-.article-1 h4 {
-	font-size: 1.4rem;
+.aida-section h2 {
+	text-align: center;
 }
-.section-1 {
-	margin: 2rem;
+.aida-section p {
+	font-size: 1.35rem;
 }
 
 .img-1 {
@@ -764,6 +767,18 @@ mindfulness meditation post
 }
 .divider {
 	border-top: 3px dotted #bbb;
+}
+.info-box p {
+	font-size: 1.35rem;
+}
+.meditation-info-section {
+	border: solid 7px rgba(0, 255, 255, 0.555);
+	padding: 2.5rem;
+	margin-top: 3rem;
+}
+
+.meditation-info-section p {
+	font-size: 1.35rem;
 }
 @media screen and (max-width: 768px) {
 	.post-header {
@@ -824,40 +839,144 @@ article 2
 }
 
 /* 
-============
-article 3
-============
+===================================
+meditation learning section starts
+==================================
  */
-.article-3 {
-	margin: 2rem;
+
+.meditation-learning-img,
+.meditation-learning-info {
+	margin-bottom: 2rem;
+	font-size: 1rem;
+	letter-spacing: var(--spacing);
+}
+.meditation-learning-img-2 {
+	padding-top: 3rem;
+}
+.meditation-info-section h2 {
+	text-align: center;
+}
+.meditation-learning-info p {
+	font-size: 1.35rem;
+}
+.meditation-info-section span {
+	color: var(--clr-primary-5);
+}
+@media screen and (min-width: 992px) {
+	.meditation-learning-center {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.meditation-learning-img,
+	.meditation-learning-info {
+		flex: 0 0 calc(50% - 2rem);
+		margin-bottom: 0;
+		align-self: center;
+	}
+}
+@media screen and (min-width: 1170px) {
+	.meditation-learning::before {
+		content: "";
+		position: absolute;
+		border: 0.5rem solid var(--clr-primary-5);
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		top: -1.5rem;
+		left: -1.5rem;
+		/* z-index: -1; */
+	}
+	.meditation-learning-img {
+		position: relative;
+		bottom: 2rem;
+	}
+	.meditation-learning-img-2 {
+		position: relative;
+		top: 2rem;
+	}
+	.meditation-learning-photo {
+		position: relative;
+	}
+	.meditation-learning-info {
+		letter-spacing: var(--spacing);
+	}
+}
+/* 
+===================================
+meditation learning section ends
+==================================
+ */
+/* 
+===================================
+meditation integration section starts
+==================================
+ */
+.integration-section {
+	border: solid 7px rgba(0, 255, 255, 0.555);
 	padding: 2rem;
-	font-size: 1.25rem;
+	margin-bottom: 3rem;
+}
+.integration-section p {
+	font-size: 1.35rem;
+}
+.integration-section span {
+	color: var(--clr-primary-5);
+}
+/* 
+===================================
+meditation integration section ends
+==================================
+ */
+/* 
+===================================
+obstacles section begins
+==================================
+ */
+.obstacles-section {
+	margin: 3rem;
+}
+.obstacles-section p {
+	font-size: 1.35rem;
+}
+.obstacles-section span {
+	color: var(--clr-primary-5);
+}
+/* 
+===================================
+obstacles section ends
+==================================
+ */
+/* 
+===================================
+chakras section begins
+==================================
+ */
+.chakra-btn a {
+	color: white;
+}
+.chakra-btn {
+	margin-bottom: 3rem;
+	display: block;
+	width: 100%;
+}
+.chakras {
+	margin: 3rem;
 }
 
-.article-3-list {
-	list-style-type: disc;
+.chakras p {
+	font-size: 1.55rem;
 }
 /* 
-	============
-	article 4
-	============
-	 */
-.article-4 {
-	padding: 2rem;
-}
-
-.list-span {
-	font-weight: bold;
-}
-/* 
-==============
-comment section
-=============
+===================================
+chakras section ends
+==================================
  */
+
 /* 
-===========================
-mindfulness meditation ends
-==========================
+=============================
+mindfulness meditation post ends
+=============================
  */
 /* 
 ==============
