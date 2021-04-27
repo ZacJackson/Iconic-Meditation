@@ -1444,7 +1444,8 @@ solar plexus post begins
 			rgba(87, 74, 0, 0.637),
 			rgba(64, 87, 0, 0.479)
 		),
-		url("../images/solar-plexus-chakra.jpg");
+		url("../images/solar-plexus-chakra.jpg") center/cover
+			no-repeat fixed;
 }
 .solar-title {
 	font-family: var(--ff-tertiary);
