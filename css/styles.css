@@ -1553,3 +1553,154 @@ solar plexus post begins
 solar plexus post ends
 ========================
  */
+/* 
+========================
+heart chakra post begins
+========================
+ */
+
+.heart-header {
+	height: 100vh;
+	background: linear-gradient(
+			rgba(87, 74, 0, 0.637),
+			rgba(64, 87, 0, 0.479)
+		),
+		url("../images/heart-chakra.jpg") center/cover no-repeat
+			fixed;
+}
+.heart-title {
+	font-family: var(--ff-tertiary);
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 25rem;
+}
+.heart-traits {
+	border: dotted 4px rgb(8, 155, 27);
+
+	outline: 4px solid rgb(8, 155, 27);
+	outline-offset: 1.5rem;
+	padding: 1rem;
+	margin: 0 1rem;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+	text-align: center;
+}
+.heart-traits h4 {
+	font-size: 2rem;
+	color: rgb(8, 155, 27);
+}
+.heart-traits h4 span {
+	font-size: 2rem;
+}
+.heart-traits span {
+	font-weight: bold;
+	color: rgb(8, 155, 27);
+}
+.heart-article h2 {
+	text-align: center;
+}
+.heart-info {
+	margin: 5rem auto;
+}
+.heart-info span {
+	color: rgb(8, 155, 27);
+}
+.heart-article span {
+	color: rgb(8, 155, 27);
+}
+.heart-info p {
+	font-size: 1.35rem;
+}
+.heart-balancing {
+	margin-top: 7rem;
+	margin-bottom: 3rem;
+	padding: 2rem;
+	background: rgba(255, 166, 0, 0.308);
+}
+.heart-meditation {
+	padding: 1rem;
+	margin: 5rem 1rem;
+
+	outline: rgb(8, 155, 27) solid 3px;
+	outline-offset: 2rem;
+}
+.heart-meditation-article p {
+	color: rgb(82, 82, 82);
+	font-size: 1.35rem;
+}
+.heart-meditation h2 {
+	text-align: center;
+}
+
+.heart-meditation-article h2 span {
+	display: block;
+	margin: 0 auto;
+}
+.heart-meditation-article li {
+	padding: 0.75rem;
+}
+.heart-meditation-article span {
+	color: rgb(8, 155, 27);
+	margin: 5rem;
+}
+.heart-btn {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.heart-btn-center {
+	float: right;
+	background: rgb(8, 155, 27);
+}
+.heart-btn-center a {
+	color: white;
+}
+.heart-stones-section {
+	padding-top: 5rem;
+	text-align: center;
+}
+
+.heart-stones-section h2 {
+	padding: 2rem;
+}
+.heart-stones-section span {
+	color: rgb(8, 155, 27);
+}
+.music-heart-section {
+	border: solid rgb(8, 155, 27) 3px;
+	margin: 7rem auto;
+	padding: 1.35rem;
+	padding-bottom: 3rem;
+}
+.music-heart-section h2 {
+	text-align: center;
+}
+.music-heart-section p {
+	font-size: 1.35rem;
+}
+.essential-heart-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border: solid rgb(8, 155, 27) 3px;
+}
+.essential-heart-section p {
+	font-size: 1.45rem;
+	padding-top: 2rem;
+}
+.essential-heart-section span {
+	color: rgb(8, 155, 27);
+}
+@media screen and (min-width: 768px) {
+	.heart-traits span {
+		font-size: 1rem;
+	}
+	.heart-meditation-article h2 {
+		text-align: center;
+	}
+}
+/* 
+========================
+heart  post ends
+========================
+ */
