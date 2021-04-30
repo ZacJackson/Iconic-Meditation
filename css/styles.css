@@ -2015,3 +2015,160 @@ third-eye chakra post begins
 third-eye  post ends
 ========================
  */
+/* 
+========================
+crown chakra post begins
+========================
+ */
+
+.crown-header {
+	height: 100vh;
+	background: linear-gradient(
+			rgba(59, 0, 87, 0.26),
+			rgba(80, 0, 87, 0.274)
+		),
+		url("../images/crown-chakra.jpg") center/cover no-repeat
+			fixed;
+}
+.crown-title {
+	font-family: var(--ff-tertiary);
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 25rem;
+}
+.crown-section p {
+	font-size: 1.35rem;
+}
+.crown-section span {
+	color: rgb(195, 0, 255);
+}
+.crown-traits {
+	border: dotted 4px rgb(195, 0, 255);
+
+	outline: 4px solid rgb(195, 0, 255);
+	outline-offset: 1.5rem;
+	padding: 1rem;
+	margin: 0 1rem;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+	text-align: center;
+}
+.crown-traits h4 {
+	font-size: 2rem;
+	color: rgb(195, 0, 255);
+}
+.crown-traits h4 span {
+	font-size: 2rem;
+}
+.crown-traits span {
+	font-weight: bold;
+	color: rgb(195, 0, 255);
+}
+.crown-article h2 {
+	text-align: center;
+}
+.crown-info {
+	margin: 5rem auto;
+}
+.crown-info span {
+	color: rgb(195, 0, 255);
+}
+.crown-article span {
+	color: rgb(195, 0, 255);
+}
+.crown-info p {
+	font-size: 1.35rem;
+}
+.crown-balancing {
+	margin-top: 7rem;
+	margin-bottom: 3rem;
+	padding: 2rem;
+	background: rgba(255, 166, 0, 0.308);
+}
+.crown-meditation {
+	padding: 1rem;
+	margin: 5rem 1rem;
+
+	outline: rgb(195, 0, 255) solid 3px;
+	outline-offset: 2rem;
+}
+.crown-meditation-article p {
+	color: rgb(82, 82, 82);
+	font-size: 1.35rem;
+}
+.crown-meditation h2 {
+	text-align: center;
+}
+
+.crown-meditation-article h2 span {
+	display: block;
+	margin: 0 auto;
+}
+.crown-meditation-article li {
+	padding: 0.75rem;
+}
+.crown-meditation-article span {
+	color: rgb(195, 0, 255);
+	margin: 5rem;
+}
+.crown-btn {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.crown-btn-center {
+	float: right;
+	background: rgb(195, 0, 255);
+}
+.crown-btn-center a {
+	color: white;
+}
+.crown-stones-section {
+	padding-top: 5rem;
+	text-align: center;
+}
+
+.crown-stones-section h2 {
+	padding: 2rem;
+}
+.crown-stones-section span {
+	color: rgb(195, 0, 255);
+}
+.music-crown-section {
+	border: solid rgb(195, 0, 255) 3px;
+	margin: 7rem auto;
+	padding: 1.35rem;
+	padding-bottom: 3rem;
+}
+.music-crown-section h2 {
+	text-align: center;
+}
+.music-crown-section p {
+	font-size: 1.35rem;
+}
+.essential-crown-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border: solid rgb(195, 0, 255) 3px;
+}
+.essential-crown-section p {
+	font-size: 1.45rem;
+	padding-top: 2rem;
+}
+.essential-crown-section span {
+	color: rgb(195, 0, 255);
+}
+@media screen and (min-width: 768px) {
+	.crown-traits span {
+		font-size: 1rem;
+	}
+	.crown-meditation-article h2 {
+		text-align: center;
+	}
+}
+/* 
+========================
+crown  post ends
+========================
+ */
