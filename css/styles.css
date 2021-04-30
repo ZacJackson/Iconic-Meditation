@@ -1861,3 +1861,156 @@ throat chakra post begins
 throat  post ends
 ========================
  */
+/* 
+========================
+third-eye chakra post begins
+========================
+ */
+
+.third-eye-header {
+	height: 100vh;
+	background: linear-gradient(
+			rgba(16, 0, 87, 0.26),
+			rgba(9, 0, 87, 0.274)
+		),
+		url("../images/third-eye.jpg") center/cover no-repeat fixed;
+}
+.third-eye-title {
+	font-family: var(--ff-tertiary);
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 25rem;
+}
+.third-eye-section p {
+	font-size: 1.35rem;
+}
+.third-eye-traits {
+	border: dotted 4px rgb(0, 153, 255);
+
+	outline: 4px solid rgb(0, 153, 255);
+	outline-offset: 1.5rem;
+	padding: 1rem;
+	margin: 0 1rem;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+	text-align: center;
+}
+.third-eye-traits h4 {
+	font-size: 2rem;
+	color: rgb(0, 153, 255);
+}
+.third-eye-traits h4 span {
+	font-size: 2rem;
+}
+.third-eye-traits span {
+	font-weight: bold;
+	color: rgb(0, 153, 255);
+}
+.third-eye-article h2 {
+	text-align: center;
+}
+.third-eye-info {
+	margin: 5rem auto;
+}
+.third-eye-info span {
+	color: rgb(0, 153, 255);
+}
+.third-eye-article span {
+	color: rgb(0, 153, 255);
+}
+.third-eye-info p {
+	font-size: 1.35rem;
+}
+.third-eye-balancing {
+	margin-top: 7rem;
+	margin-bottom: 3rem;
+	padding: 2rem;
+	background: rgba(255, 166, 0, 0.308);
+}
+.third-eye-meditation {
+	padding: 1rem;
+	margin: 5rem 1rem;
+
+	outline: rgb(0, 153, 255) solid 3px;
+	outline-offset: 2rem;
+}
+.third-eye-meditation-article p {
+	color: rgb(82, 82, 82);
+	font-size: 1.35rem;
+}
+.third-eye-meditation h2 {
+	text-align: center;
+}
+
+.third-eye-meditation-article h2 span {
+	display: block;
+	margin: 0 auto;
+}
+.third-eye-meditation-article li {
+	padding: 0.75rem;
+}
+.third-eye-meditation-article span {
+	color: rgb(0, 153, 255);
+	margin: 5rem;
+}
+.third-eye-btn {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.third-eye-btn-center {
+	float: right;
+	background: rgb(0, 153, 255);
+}
+.third-eye-btn-center a {
+	color: white;
+}
+.third-eye-stones-section {
+	padding-top: 5rem;
+	text-align: center;
+}
+
+.third-eye-stones-section h2 {
+	padding: 2rem;
+}
+.third-eye-stones-section span {
+	color: rgb(0, 153, 255);
+}
+.music-third-eye-section {
+	border: solid rgb(0, 153, 255) 3px;
+	margin: 7rem auto;
+	padding: 1.35rem;
+	padding-bottom: 3rem;
+}
+.music-third-eye-section h2 {
+	text-align: center;
+}
+.music-third-eye-section p {
+	font-size: 1.35rem;
+}
+.essential-third-eye-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border: solid rgb(0, 153, 255) 3px;
+}
+.essential-third-eye-section p {
+	font-size: 1.45rem;
+	padding-top: 2rem;
+}
+.essential-third-eye-section span {
+	color: rgb(0, 153, 255);
+}
+@media screen and (min-width: 768px) {
+	.third-eye-traits span {
+		font-size: 1rem;
+	}
+	.third-eye-meditation-article h2 {
+		text-align: center;
+	}
+}
+/* 
+========================
+third-eye  post ends
+========================
+ */
