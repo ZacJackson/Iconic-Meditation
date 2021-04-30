@@ -1072,7 +1072,7 @@ root chakra post
 			rgba(122, 6, 6, 0.795),
 			rgba(202, 7, 7, 0.418)
 		),
-		url("../images/root-chakra.jpg") center/cover no-repeat
+		url("../images/chakra-root.jpg") center/cover no-repeat
 			fixed;
 	display: grid;
 	align-items: center;
@@ -1104,10 +1104,10 @@ root chakra post
 .root-traits h4 span {
 	font-size: 2rem;
 }
-.root-traits span {
+/* .root-traits span {
 	font-weight: bold;
 	color: red;
-}
+} */
 .root-section {
 	padding: 1.35rem;
 	margin-top: 3rem;
@@ -1123,12 +1123,12 @@ root chakra post
 .foundation p {
 	font-size: 1.35rem;
 }
-.foundation span {
+/* .foundation span {
 	color: red;
-}
-.root-section span {
+} */
+/* .root-section span {
 	color: red;
-}
+} */
 .root-btn a {
 	color: white;
 }
@@ -1151,9 +1151,9 @@ root chakra post
 .root-stones-section h2 {
 	padding: 2rem;
 }
-.root-stones-section span {
+/* .root-stones-section span {
 	color: red;
-}
+} */
 .article-stones p {
 	font-size: 1.35rem;
 }
@@ -1169,9 +1169,9 @@ root chakra post
 .music-root-section p {
 	font-size: 1.35rem;
 }
-.music-root-section span {
+/* .music-root-section span {
 	color: red;
-}
+} */
 .essential-article p {
 	font-size: 1.35rem;
 }
@@ -1184,9 +1184,9 @@ root chakra post
 	margin-right: auto;
 	width: 50%;
 }
-.essential-span {
+/* .essential-span {
 	color: red;
-}
+} */
 .essential-root-section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -1203,16 +1203,16 @@ root chakra post
 .clear p {
 	clear: both;
 }
-.essential-section span {
+/* .essential-section span {
 	color: red;
-}
+} */
 .essential-root-section p {
 	font-size: 1.45rem;
 	padding-top: 2rem;
 }
-.essential-root-section span {
+/* .essential-root-section span {
 	color: rgb(255, 0, 0);
-}
+} */
 
 .key-points-bold {
 	font-weight: bolder;
@@ -1291,19 +1291,19 @@ sacral chakra post
 .sacral-traits h4 span {
 	font-size: 2rem;
 }
-.sacral-traits span {
+/* .sacral-traits span {
 	font-weight: bold;
 	color: rgb(255, 166, 0);
-}
+} */
 
 .sacral-section h2 {
 	font-size: 3rem;
 	padding-bottom: 2rem;
 	text-align: center;
 }
-.sacral-section span {
+/* .sacral-section span {
 	color: rgb(255, 166, 0);
-}
+} */
 .sacral-section p {
 	color: black;
 	text-transform: var(--spacing);
@@ -1331,7 +1331,6 @@ sacral chakra post
 	padding: 0.75rem;
 }
 .sacral-meditation-article span {
-	color: rgb(255, 166, 0);
 	margin: 5rem;
 }
 .sacral-stones-section {
@@ -1342,9 +1341,9 @@ sacral chakra post
 .sacral-stones-section h2 {
 	padding: 2rem;
 }
-.sacral-stones-section span {
+/* .sacral-stones-section span {
 	color: rgb(255, 166, 0);
-}
+} */
 .sacral-balancing {
 	margin-top: 7rem;
 	margin-bottom: 3rem;
@@ -1354,9 +1353,9 @@ sacral chakra post
 .balancing-article h2 {
 	text-align: center;
 }
-.balancing-article span {
+/* .balancing-article span {
 	color: rgb(255, 166, 0);
-}
+} */
 .balancing-article p {
 	font-size: 1.35rem;
 	color: rgb(82, 82, 82);
@@ -1394,9 +1393,9 @@ sacral chakra post
 	font-size: 1.45rem;
 	padding-top: 2rem;
 }
-.essential-sacral-section span {
+/* .essential-sacral-section span {
 	color: rgb(255, 166, 0);
-}
+} */
 
 @media screen and (min-width: 768px) {
 	.sacral-traits h4 span {
@@ -1409,8 +1408,8 @@ sacral chakra post
 				rgba(122, 105, 6, 0.795),
 				rgba(202, 7, 7, 0.418)
 			),
-			url("../images/chakra-4354545_1280.jpg")
-				center/cover no-repeat fixed;
+			url("../images/chakra-sacral.jpg") center/cover
+				no-repeat fixed;
 		display: grid;
 		align-items: center;
 	}
@@ -1474,19 +1473,19 @@ solar plexus post begins
 .solar-traits h4 span {
 	font-size: 2rem;
 }
-.solar-traits span {
+/* .solar-traits span {
 	font-weight: bold;
 	color: rgb(255, 166, 0);
-}
+} */
 .solar-article h2 {
 	text-align: center;
 }
 .solar-info {
 	margin: 5rem auto;
 }
-.solar-info span {
+/* .solar-info span {
 	color: rgb(255, 166, 0);
-}
+} */
 .solar-article span {
 	color: rgb(255, 166, 0);
 }
@@ -1516,7 +1515,6 @@ solar plexus post begins
 	padding: 0.75rem;
 }
 .solar-meditation-article span {
-	color: rgb(255, 166, 0);
 	margin: 5rem;
 }
 .solar-btn {
@@ -1538,9 +1536,9 @@ solar plexus post begins
 .solar-stones-section h2 {
 	padding: 2rem;
 }
-.solar-stones-section span {
+/* .solar-stones-section span {
 	color: rgb(255, 166, 0);
-}
+} */
 @media screen and (min-width: 768px) {
 	.solar-traits span {
 		font-size: 1rem;
@@ -1566,7 +1564,7 @@ heart chakra post begins
 			rgba(87, 74, 0, 0.637),
 			rgba(64, 87, 0, 0.479)
 		),
-		url("../images/heart-chakra.jpg") center/cover no-repeat
+		url("../images/chakra-heart.jpg") center/cover no-repeat
 			fixed;
 }
 .heart-title {
@@ -1600,7 +1598,6 @@ heart chakra post begins
 }
 .heart-traits span {
 	font-weight: bold;
-	color: rgb(8, 155, 27);
 }
 .heart-article h2 {
 	text-align: center;
@@ -1608,12 +1605,12 @@ heart chakra post begins
 .heart-info {
 	margin: 5rem auto;
 }
-.heart-info span {
+/* .heart-info span {
 	color: rgb(8, 155, 27);
 }
 .heart-article span {
 	color: rgb(8, 155, 27);
-}
+} */
 .heart-info p {
 	font-size: 1.35rem;
 }
@@ -1646,7 +1643,6 @@ heart chakra post begins
 	padding: 0.75rem;
 }
 .heart-meditation-article span {
-	color: rgb(8, 155, 27);
 	margin: 5rem;
 }
 .heart-btn {
@@ -1668,9 +1664,9 @@ heart chakra post begins
 .heart-stones-section h2 {
 	padding: 2rem;
 }
-.heart-stones-section span {
+/* .heart-stones-section span {
 	color: rgb(8, 155, 27);
-}
+} */
 .music-heart-section {
 	border: solid rgb(8, 155, 27) 3px;
 	margin: 7rem auto;
@@ -1692,9 +1688,9 @@ heart chakra post begins
 	font-size: 1.45rem;
 	padding-top: 2rem;
 }
-.essential-heart-section span {
+/* .essential-heart-section span {
 	color: rgb(8, 155, 27);
-}
+} */
 @media screen and (min-width: 768px) {
 	.heart-traits span {
 		font-size: 1rem;
@@ -1754,7 +1750,6 @@ throat chakra post begins
 }
 .throat-traits span {
 	font-weight: bold;
-	color: rgb(0, 153, 255);
 }
 .throat-article h2 {
 	text-align: center;
@@ -1762,12 +1757,12 @@ throat chakra post begins
 .throat-info {
 	margin: 5rem auto;
 }
-.throat-info span {
+/* .throat-info span {
 	color: rgb(0, 153, 255);
 }
 .throat-article span {
 	color: rgb(0, 153, 255);
-}
+} */
 .throat-info p {
 	font-size: 1.35rem;
 }
@@ -1800,7 +1795,6 @@ throat chakra post begins
 	padding: 0.75rem;
 }
 .throat-meditation-article span {
-	color: rgb(0, 153, 255);
 	margin: 5rem;
 }
 .throat-btn {
@@ -1822,9 +1816,9 @@ throat chakra post begins
 .throat-stones-section h2 {
 	padding: 2rem;
 }
-.throat-stones-section span {
+/* .throat-stones-section span {
 	color: rgb(0, 153, 255);
-}
+} */
 .music-throat-section {
 	border: solid rgb(0, 153, 255) 3px;
 	margin: 7rem auto;
@@ -1846,9 +1840,9 @@ throat chakra post begins
 	font-size: 1.45rem;
 	padding-top: 2rem;
 }
-.essential-throat-section span {
+/* .essential-throat-section span {
 	color: rgb(0, 153, 255);
-}
+} */
 @media screen and (min-width: 768px) {
 	.throat-traits span {
 		font-size: 1rem;
@@ -1907,7 +1901,6 @@ third-eye chakra post begins
 }
 .third-eye-traits span {
 	font-weight: bold;
-	color: rgb(0, 153, 255);
 }
 .third-eye-article h2 {
 	text-align: center;
@@ -1915,12 +1908,12 @@ third-eye chakra post begins
 .third-eye-info {
 	margin: 5rem auto;
 }
-.third-eye-info span {
+/* .third-eye-info span {
 	color: rgb(0, 153, 255);
 }
 .third-eye-article span {
 	color: rgb(0, 153, 255);
-}
+} */
 .third-eye-info p {
 	font-size: 1.35rem;
 }
@@ -1953,7 +1946,6 @@ third-eye chakra post begins
 	padding: 0.75rem;
 }
 .third-eye-meditation-article span {
-	color: rgb(0, 153, 255);
 	margin: 5rem;
 }
 .third-eye-btn {
@@ -1975,9 +1967,9 @@ third-eye chakra post begins
 .third-eye-stones-section h2 {
 	padding: 2rem;
 }
-.third-eye-stones-section span {
+/* .third-eye-stones-section span {
 	color: rgb(0, 153, 255);
-}
+} */
 .music-third-eye-section {
 	border: solid rgb(0, 153, 255) 3px;
 	margin: 7rem auto;
@@ -1999,9 +1991,9 @@ third-eye chakra post begins
 	font-size: 1.45rem;
 	padding-top: 2rem;
 }
-.essential-third-eye-section span {
+/* .essential-third-eye-section span {
 	color: rgb(0, 153, 255);
-}
+} */
 @media screen and (min-width: 768px) {
 	.third-eye-traits span {
 		font-size: 1rem;
@@ -2027,7 +2019,7 @@ crown chakra post begins
 			rgba(59, 0, 87, 0.26),
 			rgba(80, 0, 87, 0.274)
 		),
-		url("../images/crown-chakra.jpg") center/cover no-repeat
+		url("../images/chakra-crown.jpg") center/cover no-repeat
 			fixed;
 }
 .crown-title {
@@ -2041,9 +2033,9 @@ crown chakra post begins
 .crown-section p {
 	font-size: 1.35rem;
 }
-.crown-section span {
+/* .crown-section span {
 	color: rgb(195, 0, 255);
-}
+} */
 .crown-traits {
 	border: dotted 4px rgb(195, 0, 255);
 
@@ -2062,22 +2054,22 @@ crown chakra post begins
 .crown-traits h4 span {
 	font-size: 2rem;
 }
-.crown-traits span {
+/* .crown-traits span {
 	font-weight: bold;
 	color: rgb(195, 0, 255);
-}
+} */
 .crown-article h2 {
 	text-align: center;
 }
 .crown-info {
 	margin: 5rem auto;
 }
-.crown-info span {
+/* .crown-info span {
 	color: rgb(195, 0, 255);
-}
-.crown-article span {
+} */
+/* .crown-article span {
 	color: rgb(195, 0, 255);
-}
+} */
 .crown-info p {
 	font-size: 1.35rem;
 }
@@ -2110,7 +2102,6 @@ crown chakra post begins
 	padding: 0.75rem;
 }
 .crown-meditation-article span {
-	color: rgb(195, 0, 255);
 	margin: 5rem;
 }
 .crown-btn {
@@ -2132,9 +2123,9 @@ crown chakra post begins
 .crown-stones-section h2 {
 	padding: 2rem;
 }
-.crown-stones-section span {
+/* .crown-stones-section span {
 	color: rgb(195, 0, 255);
-}
+} */
 .music-crown-section {
 	border: solid rgb(195, 0, 255) 3px;
 	margin: 7rem auto;
@@ -2156,9 +2147,9 @@ crown chakra post begins
 	font-size: 1.45rem;
 	padding-top: 2rem;
 }
-.essential-crown-section span {
+/* .essential-crown-section span {
 	color: rgb(195, 0, 255);
-}
+} */
 @media screen and (min-width: 768px) {
 	.crown-traits span {
 		font-size: 1rem;
