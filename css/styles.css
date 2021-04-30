@@ -584,9 +584,9 @@ Contact
 	box-shadow: var(--dark-shadow);
 }
 /* .contact {
-  background: var(--clr-primary-6);
-  height: 70vh;
-  margin-top: 50px;
+	background: var(--clr-primary-6);
+	height: 70vh;
+	margin-top: 50px;
 } */
 .contact-title {
 	color: var(--clr-white);
