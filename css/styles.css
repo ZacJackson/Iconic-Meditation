@@ -1444,8 +1444,8 @@ solar plexus post begins
 			rgba(87, 74, 0, 0.637),
 			rgba(64, 87, 0, 0.479)
 		),
-		url("../images/solar-plexus-chakra.jpg") center/cover
-			no-repeat fixed;
+		url("../images/chakra-solar.jpg") center/cover no-repeat
+			fixed;
 }
 .solar-title {
 	font-family: var(--ff-tertiary);
@@ -1716,7 +1716,7 @@ throat chakra post begins
 			rgba(16, 0, 87, 0.26),
 			rgba(9, 0, 87, 0.274)
 		),
-		url("../images/throat-chakra.jpg") center/cover no-repeat
+		url("../images/chakra-throat.jpg") center/cover no-repeat
 			fixed;
 }
 .throat-title {
@@ -1868,7 +1868,8 @@ third-eye chakra post begins
 			rgba(16, 0, 87, 0.26),
 			rgba(9, 0, 87, 0.274)
 		),
-		url("../images/third-eye.jpg") center/cover no-repeat fixed;
+		url("../images/chakra-third-eye.jpg") center/cover no-repeat
+			fixed;
 }
 .third-eye-title {
 	font-family: var(--ff-tertiary);
