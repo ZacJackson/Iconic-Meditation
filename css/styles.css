@@ -398,9 +398,7 @@ blog
 	margin-bottom: 1.5rem;
 	font-family: var(--ff-secondary);
 }
-.blog-title h2 {
-	font-size: 5rem;
-}
+
 .card {
 	height: 27rem;
 	position: relative;
