@@ -545,6 +545,9 @@ About
 /* section add to globals */
 /* title add to globals */
 /* section center add to globals */
+.section-about p {
+	font-size: 1.35rem;
+}
 .about-img,
 .about-info {
 	margin-bottom: 2rem;
@@ -2233,19 +2236,30 @@ asana post ends
 .yoga-crown {
 	margin: 5rem auto;
 }
-.headstand-crown {
+.asana-box {
 	display: grid;
 	grid-template-columns: 1fr;
 	border: solid 1px black;
+	padding: 2rem 3rem;
+	margin: 2rem auto;
+}
+.asana-btn {
+	margin-top: 3.4rem;
+}
+.asana-btn a {
+	color: white;
 }
 
-.headstand-crown img {
-	padding: 2rem 3rem;
+.asana-box h4 {
+	text-align: center;
+	text-decoration: underline;
 }
+
 @media screen and (min-width: 768px) {
-	.headstand-crown {
+	.asana-box {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		box-shadow: var(--dark-shadow);
 	}
 }
 
