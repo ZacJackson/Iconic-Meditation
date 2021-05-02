@@ -851,6 +851,7 @@ mindfulness meditation post
 	height: 100%;
 	object-fit: cover;
 	margin-top: 2rem;
+	box-shadow: 0 11px 15px rgba(0, 0, 0, 0.2);
 }
 
 .key-points li {
