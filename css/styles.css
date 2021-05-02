@@ -106,6 +106,7 @@ h1 {
 }
 h2 {
 	font-size: 2rem;
+	font-family: var(--ff-tertiary);
 }
 h3 {
 	font-size: 1.25rem;
@@ -2046,6 +2047,12 @@ crown chakra post begins
 	position: relative;
 	top: 25rem;
 }
+.crown-section {
+	margin: 8rem auto;
+}
+.crown-section h2 {
+	text-align: center;
+}
 .crown-section p {
 	font-size: 1.35rem;
 }
@@ -2156,12 +2163,13 @@ crown chakra post begins
 }
 .essential-crown-section {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	border: solid rgb(195, 0, 255) 3px;
 }
+
 .essential-crown-section p {
 	font-size: 1.45rem;
-	padding-top: 2rem;
+	padding: 2rem 2rem;
 }
 /* .essential-crown-section span {
 	color: rgb(195, 0, 255);
@@ -2172,6 +2180,12 @@ crown chakra post begins
 	}
 	.crown-meditation-article h2 {
 		text-align: center;
+	}
+}
+@media screen and (min-width: 768px) {
+	.essential-crown-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 	}
 }
 /* 
@@ -2197,5 +2211,48 @@ disclaimer post ends
 /* 
 ========================
 disclaimer post ends
+========================
+ */
+/* 
+========================
+asana post ends
+========================
+ */
+.asana-center h2 {
+	text-align: center;
+	margin: 5rem auto;
+	font-family: var(--ff-tertiary);
+}
+.asana-center li span {
+	font-weight: bold;
+}
+.asana-center li {
+	padding: 1rem 3rem;
+}
+.asana-center p {
+	font-size: 1.35rem;
+}
+.yoga-crown {
+	margin: 5rem auto;
+}
+.headstand-crown {
+	display: grid;
+	grid-template-columns: 1fr;
+	border: solid 1px black;
+}
+
+.headstand-crown img {
+	padding: 2rem 3rem;
+}
+@media screen and (min-width: 768px) {
+	.headstand-crown {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/* 
+========================
+asana post ends
 ========================
  */
