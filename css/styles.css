@@ -71,10 +71,10 @@ ul {
 }
 a {
 	text-decoration: none;
-	color: blue;
+	color: black;
 }
 a:hover {
-	color: red;
+	color: rgba(0, 0, 0, 0.281);
 }
 
 img:not(.nav-logo) {
@@ -307,6 +307,42 @@ Navbar
 	}
 }
 
+/*
+=============== 
+comments
+===============
+*/
+#respond {
+	margin: 3rem 3rem;
+	padding: 3rem 3rem;
+	display: block;
+}
+
+#respond input[type="text"],
+#respond input[type="email"],
+#respond textarea {
+	margin-bottom: 10px;
+	display: block;
+	width: 100%;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	padding: 1.35rem;
+
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+
+	line-height: 1.4em;
+}
+/*
+=============== 
+comments
+===============
+*/
 /*
 =============== 
 affiliate links
@@ -619,7 +655,7 @@ Contact
 .contact-form {
 	display: flex;
 	max-width: 28rem;
-	margin-top: 3.5rem;
+	/* margin-top: 3.5rem; */
 }
 
 .form-control {
@@ -810,24 +846,35 @@ mindfulness meditation post
 		),
 		url("../images/image\ _of_meditative_atmosphere.jpeg")
 			center/cover no-repeat fixed;
-	display: grid;
-	align-items: center;
 }
 .meditation-title {
-	font-size: 2rem;
+	position: relative;
+	top: 32rem;
 	color: white;
 	text-align: center;
 	font-family: var(--ff-tertiary);
 }
 .meditation-title p {
-	font-size: 2rem;
-	color: white;
+	font-size: 1rem;
+	color: azure;
+}
+.meditation-heading-2 {
+	padding-top: 2rem;
+	margin: 0 2rem;
+	text-align: center;
+}
+.meditation-block {
+	border: 3px solid black;
+	padding: 2rem 3rem;
+	margin: 2rem auto;
+}
+.Meditation-block-img {
 }
 
 .meditation-section {
-	border: solid 7px rgba(0, 255, 255, 0.555);
+	/* border: solid 7px rgba(0, 255, 255, 0.555); */
 	padding: 2.5rem;
-	margin-top: 5rem;
+	margin: 5rem auto 5rem auto;
 }
 .meditation-section h3 {
 	font-size: 1.35rem;
@@ -838,9 +885,15 @@ mindfulness meditation post
 .meditation-section p {
 	font-size: 1.35rem;
 }
+.affiliate-ad-img {
+	display: grid;
+	grid-template-columns: 1fr, 1fr;
+	width: 50%;
+}
 .aida-section {
-	border: solid 7px rgba(0, 255, 255, 0.555);
-	padding: 2.5rem;
+	border: solid 7px black;
+	padding: 3.5rem;
+	margin: 2.5rem auto;
 }
 .aida-section h2 {
 	text-align: center;
@@ -852,7 +905,7 @@ mindfulness meditation post
 .img-1 {
 	height: 100%;
 	object-fit: cover;
-	margin-top: 2rem;
+	margin: 2rem auto 10rem auto;
 	box-shadow: 0 11px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -2265,6 +2318,102 @@ asana post ends
 
 /* 
 ========================
-asana post ends
+omega (tiles) ends
+========================
+*/
+.omega-heading {
+	text-align: center;
+	font-family: var(--ff-tertiary);
+}
+.omega-subheading {
+	text-align: center;
+	font-family: var(--ff-secondary);
+}
+.omega-center {
+	padding: 4rem 0;
+}
+.omega-tiles {
+	max-width: 1700px;
+	height: 100vh;
+	width: 95vw;
+	margin: 3rem auto;
+	display: grid;
+	row-gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+	.omega-tiles {
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 2rem;
+	}
+}
+@media screen and (min-width: 992px) {
+	.omega-tiles {
+		grid-template-columns: repeat(4, 1fr);
+		column-gap: 2rem;
+	}
+}
+@media screen and (min-width: 1170px) {
+	.omega-tiles {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(5, 200px);
+		grid-template-areas:
+			"a a a b"
+			"a a a c"
+			"d d d d"
+			"d d d d"
+			"i i i i "
+			"e f g h ";
+	}
+	.omega-tiles img {
+		height: 100%;
+	}
+	.omega-1 {
+		grid-area: a;
+		border: 2px black solid;
+		padding: 1rem 1rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.omega-1 h3 {
+		font-size: 1.2rem;
+	}
+	.omega-2 {
+		grid-area: b;
+	}
+	.omega-2 a {
+		display: block;
+		color: rgb(116, 116, 226);
+		font-size: 1.1rem;
+	}
+	.omega-2 h3 {
+		font-size: 1.55rem;
+		font-family: var(--ff-tertiary);
+	}
+	.omega-3 {
+		grid-area: c;
+	}
+
+	.omega-4 {
+		grid-area: d;
+	}
+	.omega-5 {
+		grid-area: e;
+	}
+	.omega-6 {
+		grid-area: f;
+	}
+	.omega-7 {
+		grid-area: g;
+	}
+	.omega-8 {
+		grid-area: h;
+	}
+	.omega-9 {
+		grid-area: i;
+	}
+}
+/* 
+========================
+omega (tiles) ends
 ========================
  */
