@@ -879,8 +879,6 @@ mindfulness meditation post
 .meditation-block-img img {
 	border-radius: 10%;
 	margin: 0 auto;
-	height: 500px;
-	width: 1000px;
 }
 
 .meditation-section {
@@ -925,6 +923,7 @@ mindfulness meditation post
 	padding: 2rem;
 	margin: 2rem auto;
 	box-shadow: var(--dark-shadow);
+	text-align: center;
 }
 @media screen and (min-width: 992px) {
 	.meditation-quote {
@@ -1106,7 +1105,7 @@ obstacles section begins
 ==================================
  */
 .obstacles-section {
-	margin: 3rem;
+	margin: 0 auto;
 	border: solid 2px black;
 	padding: 2.5rem;
 }
@@ -1139,11 +1138,13 @@ chakras section begins
 	width: 100%;
 }
 .chakras {
-	margin: 3rem;
+	padding: 2rem 1rem 0 1rem;
+	margin: 2rem auto;
+	border: solid black 2px;
 }
 
 .chakras p {
-	font-size: 1.55rem;
+	font-size: 1.35rem;
 }
 /* 
 ===================================
@@ -2365,11 +2366,10 @@ omega (tiles) ends
 		"i";
 	max-width: 1170px;
 	margin: 3rem auto;
+	padding: 0 2rem;
 	row-gap: 2rem;
 }
 .omega-tiles iframe {
-	position: relative;
-	left: 2rem;
 	width: 410px;
 	height: 227px;
 }
@@ -2414,9 +2414,9 @@ omega (tiles) ends
 
 	.omega-1 iframe {
 		height: 440px;
-		width: 820px;
+		width: 777px;
 		position: relative;
-		left: -0.45rem;
+		left: -0.2rem;
 	}
 
 	.omega-2 {
@@ -2443,7 +2443,7 @@ omega (tiles) ends
 		transition: transform 0.7s;
 		grid-area: d;
 		border: solid black 2px;
-		padding: 1rem 2rem 0 2rem;
+		padding: 2rem 2rem;
 	}
 	.omega-4 h3 {
 		font-size: 1.35rem;
@@ -2451,7 +2451,7 @@ omega (tiles) ends
 		font-family: var(--ff-tertiary);
 	}
 	.omega-4 p {
-		font-size: 1.12rem;
+		font-size: 1rem;
 		letter-spacing: var(--spacing);
 	}
 	.omega-4:hover {
@@ -2502,7 +2502,7 @@ omega (tiles) ends
 	font-family: var(--ff-tertiary);
 }
 .omega-9 p {
-	font-size: 1.35rem;
+	font-size: 1.3rem;
 	letter-spacing: var(--spacing);
 	padding-bottom: 0.5rem;
 }
@@ -2513,6 +2513,7 @@ omega (tiles) ends
 .omega-btn a {
 	color: white;
 }
+
 /* 
 ========================
 omega (tiles) ends
