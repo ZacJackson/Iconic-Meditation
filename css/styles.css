@@ -71,10 +71,10 @@ ul {
 }
 a {
 	text-decoration: none;
-	color: black;
+	color: rgb(0, 140, 255);
 }
 a:hover {
-	color: rgba(0, 0, 0, 0.281);
+	color: rgb(255, 0, 0);
 }
 
 img:not(.nav-logo) {
@@ -123,9 +123,7 @@ p {
 li {
 	font-size: 1.35rem;
 }
-.divider {
-	margin: 3rem 0;
-}
+
 @media screen and (min-width: 800px) {
 	h1 {
 		font-size: 4rem;
@@ -632,6 +630,7 @@ Contact
 ===============
 */
 .contact {
+	margin-top: 7rem;
 	background: var(--clr-primary-6);
 	box-shadow: var(--dark-shadow);
 }
@@ -805,7 +804,7 @@ Footer
 .footer-icons {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 1.5rem;
+	/* margin-bottom: 1.5rem; */
 	flex-wrap: wrap;
 }
 .footer-link {
@@ -841,15 +840,15 @@ mindfulness meditation post
 .post-header {
 	height: 100vh;
 	background: linear-gradient(
-			rgba(0, 255, 255, 0.555),
-			rgba(0, 255, 255, 0.333)
+			rgba(0, 255, 255, 0.342),
+			rgba(0, 255, 255, 0.144)
 		),
 		url("../images/image\ _of_meditative_atmosphere.jpeg")
 			center/cover no-repeat fixed;
 }
 .meditation-title {
 	position: relative;
-	top: 32rem;
+	top: 20rem;
 	color: white;
 	text-align: center;
 	font-family: var(--ff-tertiary);
@@ -859,25 +858,40 @@ mindfulness meditation post
 	color: azure;
 }
 .meditation-heading-2 {
-	padding-top: 2rem;
+	padding-top: 5rem;
 	margin: 0 2rem;
 	text-align: center;
+}
+.meditation-heading-2 p {
+	padding: 1rem 0 2rem 0;
+	margin: 0 2rem;
+	text-align: center;
+	font-family: var(--ff-tertiary);
 }
 .meditation-block {
 	border: 3px solid black;
 	padding: 2rem 3rem;
 	margin: 2rem auto;
 }
-.Meditation-block-img {
+.meditation-block h4 {
+	font-family: var(--ff-secondary);
+}
+.meditation-block-img img {
+	border-radius: 10%;
+	margin: 0 auto;
+	height: 500px;
+	width: 1000px;
 }
 
 .meditation-section {
 	/* border: solid 7px rgba(0, 255, 255, 0.555); */
 	padding: 2.5rem;
-	margin: 5rem auto 5rem auto;
+	margin: 5rem auto 1rem auto;
 }
 .meditation-section h3 {
-	font-size: 1.35rem;
+	font-size: 3rem;
+	padding-top: 2rem;
+	font-family: var(--ff-secondary);
 }
 .meditation-section h4 {
 	font-size: 2.3rem;
@@ -886,9 +900,8 @@ mindfulness meditation post
 	font-size: 1.35rem;
 }
 .affiliate-ad-img {
-	display: grid;
-	grid-template-columns: 1fr, 1fr;
-	width: 50%;
+	margin: 0 auto;
+	width: 800px;
 }
 .aida-section {
 	border: solid 7px black;
@@ -901,23 +914,31 @@ mindfulness meditation post
 .aida-section p {
 	font-size: 1.35rem;
 }
-
-.img-1 {
-	height: 100%;
-	object-fit: cover;
-	margin: 2rem auto 10rem auto;
-	box-shadow: 0 11px 15px rgba(0, 0, 0, 0.2);
+.meditation-quote {
+	display: block;
+	background: linear-gradient(
+		rgba(225, 0, 255, 0.459),
+		rgba(38, 0, 255, 0.459)
+	);
+	font-family: var(--ff-tertiary);
+	font-size: 3rem;
+	padding: 2rem;
+	margin: 2rem auto;
+	box-shadow: var(--dark-shadow);
 }
-
+@media screen and (min-width: 992px) {
+	.meditation-quote {
+		display: block;
+		border: none;
+		text-align: center;
+	}
+}
 .key-points li {
 	list-style-type: disc;
 	padding: 1rem;
 	font-size: 1.35rem;
 }
-.divider {
-	border-top: 3px dotted #bbb;
-	margin: 0 10rem;
-}
+
 .info-box p {
 	font-size: 1.35rem;
 }
@@ -943,38 +964,29 @@ mindfulness meditation post
 		margin: 0.5rem;
 	}
 }
-/* 
-============
-article 2
-============
- */
-.article-2 {
-	border: solid black 2px;
-	padding: 2rem;
-	margin: 5rem;
-}
-.article-2 h2 {
-	text-align: center;
-}
-
-/* 
-	============
-	quote starts
-	============
-	 */
-.quote {
-	margin-right: 2rem;
-	padding: 2rem;
-	font-size: 2rem;
-	font-family: var(--ff-tertiary);
-	text-align: center;
+@media screen and (min-width: 992px) {
+	.meditation-heading-2 h2 {
+		margin-top: 3rem;
+		font-size: 3.5rem;
+	}
+	.meditation-heading-2 p {
+		padding: 2rem auto 1rem auto;
+		font-size: 1.5rem;
+	}
+	.meditation-block {
+		margin: 0.5rem auto;
+	}
+	.meditation-title {
+		padding: 2rem 3rem;
+		margin: 1rem auto;
+	}
+	.meditation-section img {
+		border-radius: 10%;
+		width: 700px;
+		margin: auto auto;
+	}
 }
 
-.quote-author {
-	text-align: center;
-	width: 100%;
-	color: black;
-}
 /* 
 		============
 		info box starts
@@ -983,12 +995,16 @@ article 2
 .info-box {
 	border: solid black 2px;
 	padding: 2rem;
-	background: rgba(255, 0, 0, 0.493);
-	color: white;
+	color: rgb(0, 0, 0);
 	font-size: 1.2rem;
 }
 .info-box p {
-	color: white;
+	color: rgb(0, 0, 0);
+	letter-spacing: var(--spacing);
+}
+.info-box h3 {
+	font-family: var(--ff-secondary);
+	letter-spacing: var(--spacing);
 }
 
 /* 
@@ -1066,12 +1082,15 @@ meditation integration section starts
 ==================================
  */
 .integration-section {
-	border: solid 7px rgba(0, 255, 255, 0.555);
+	border: solid 2px rgba(0, 0, 0, 0.555);
 	padding: 2rem;
 	margin-bottom: 3rem;
 }
 .integration-section p {
 	font-size: 1.35rem;
+}
+.integration-article H2 {
+	margin: 5rem auto 2rem auto;
 }
 .integration-section span {
 	color: var(--clr-primary-5);
@@ -1088,9 +1107,15 @@ obstacles section begins
  */
 .obstacles-section {
 	margin: 3rem;
+	border: solid 2px black;
+	padding: 2.5rem;
 }
 .obstacles-section p {
 	font-size: 1.35rem;
+}
+.obstacles-section h2 {
+	padding: 2rem;
+	text-align: center;
 }
 .obstacles-section span {
 	color: var(--clr-primary-5);
@@ -2321,24 +2346,32 @@ asana post ends
 omega (tiles) ends
 ========================
 */
-.omega-heading {
-	text-align: center;
-	font-family: var(--ff-tertiary);
-}
-.omega-subheading {
-	text-align: center;
-	font-family: var(--ff-secondary);
-}
+
 .omega-center {
-	padding: 4rem 0;
+	margin: 4rem auto;
 }
 .omega-tiles {
-	max-width: 1700px;
-	height: 100vh;
-	width: 95vw;
-	margin: 3rem auto;
 	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"a"
+		"b"
+		"c"
+		"d"
+		"e"
+		"f"
+		"g"
+		"h"
+		"i";
+	max-width: 1170px;
+	margin: 3rem auto;
 	row-gap: 2rem;
+}
+.omega-tiles iframe {
+	position: relative;
+	left: 2rem;
+	width: 410px;
+	height: 227px;
 }
 @media screen and (min-width: 768px) {
 	.omega-tiles {
@@ -2359,58 +2392,126 @@ omega (tiles) ends
 		grid-template-areas:
 			"a a a b"
 			"a a a c"
-			"d d d d"
-			"d d d d"
-			"i i i i "
-			"e f g h ";
+			"d d i i"
+			"d d i i"
+			"e f g h";
 	}
+	.omega-center {
+		align-items: center;
+		max-width: 1170px;
+		padding: 2rem;
+		margin: 0 auto;
+		width: 100%;
+	}
+
 	.omega-tiles img {
 		height: 100%;
 	}
 	.omega-1 {
+		display: block;
 		grid-area: a;
-		border: 2px black solid;
-		padding: 1rem 1rem;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
 	}
-	.omega-1 h3 {
-		font-size: 1.2rem;
+
+	.omega-1 iframe {
+		height: 440px;
+		width: 820px;
+		position: relative;
+		left: -0.45rem;
 	}
+
 	.omega-2 {
+		color: red;
+		transition: transform 0.7s;
 		grid-area: b;
 	}
-	.omega-2 a {
-		display: block;
-		color: rgb(116, 116, 226);
-		font-size: 1.1rem;
+
+	.omega-2:hover {
+		transform: scale(1.1);
+		grid-area: b;
 	}
-	.omega-2 h3 {
-		font-size: 1.55rem;
-		font-family: var(--ff-tertiary);
-	}
+
 	.omega-3 {
+		transition: transform 0.7s;
+		grid-area: c;
+	}
+	.omega-3:hover {
+		transform: scale(1.1);
 		grid-area: c;
 	}
 
 	.omega-4 {
+		transition: transform 0.7s;
 		grid-area: d;
+		border: solid black 2px;
+		padding: 1rem 2rem 0 2rem;
+	}
+	.omega-4 h3 {
+		font-size: 1.35rem;
+		margin: 0 auto 1rem auto;
+		font-family: var(--ff-tertiary);
+	}
+	.omega-4 p {
+		font-size: 1.12rem;
+		letter-spacing: var(--spacing);
+	}
+	.omega-4:hover {
+		grid-area: d;
+		transform: scale(1.1);
 	}
 	.omega-5 {
+		transition: transform 0.7s;
+		grid-area: e;
+	}
+	.omega-5:hover {
+		transform: scale(1.1);
 		grid-area: e;
 	}
 	.omega-6 {
+		transition: transform 0.7s;
+		grid-area: f;
+	}
+	.omega-6:hover {
+		transform: scale(1.1);
 		grid-area: f;
 	}
 	.omega-7 {
+		transition: transform 0.7s;
 		grid-area: g;
 	}
-	.omega-8 {
-		grid-area: h;
-	}
-	.omega-9 {
-		grid-area: i;
-	}
+}
+.omega-7:hover {
+	transform: scale(1.1);
+	grid-area: g;
+}
+.omega-8 {
+	transition: transform 0.7s;
+	grid-area: h;
+}
+.omega-8:hover {
+	transform: scale(1.1);
+	grid-area: h;
+}
+.omega-9 {
+	transition: transform 0.7s;
+	grid-area: i;
+	padding: 1.5rem;
+	border: solid black 2px;
+}
+.omega-9 h3 {
+	font-size: 2rem;
+	font-family: var(--ff-tertiary);
+}
+.omega-9 p {
+	font-size: 1.35rem;
+	letter-spacing: var(--spacing);
+	padding-bottom: 0.5rem;
+}
+.omega-9:hover {
+	transform: scale(1.1);
+	grid-area: i;
+}
+.omega-btn a {
+	color: white;
 }
 /* 
 ========================
