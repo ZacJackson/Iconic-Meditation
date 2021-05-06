@@ -1150,6 +1150,7 @@ chakras section begins
 	padding: 2rem 1rem 0 1rem;
 	margin: 2rem auto;
 	border: solid black 2px;
+	text-align: center;
 }
 
 .chakras p {
@@ -2356,6 +2357,10 @@ asana post ends
 omega (tiles) ends
 ========================
 */
+.omega-tiles {
+	border: solid black 2px;
+	padding: 2rem;
+}
 .omega-1 {
 	position: relative;
 	width: 100%;
@@ -2375,6 +2380,7 @@ omega (tiles) ends
 .omega-center h3 {
 	font-family: var(--ff-tertiary);
 	text-align: center;
+	margin-top: 2rem;
 }
 .omega-center p {
 	font-size: 1.35rem;
@@ -2391,50 +2397,21 @@ omega (tiles) ends
 	font-weight: 700;
 	color: black;
 }
-.omega-tiles {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-areas:
-		"a"
-		"i";
-	margin: 2rem auto;
-	row-gap: 2rem;
-	border: solid black 2px;
-	padding: 1rem;
-}
 
 @media screen and (min-width: 1170px) {
 	.omega-tiles {
-		grid-template-columns: repeat(1fr);
-		grid-template-areas:
-			"a a"
-			"a a "
-			"i i"
-			"i i";
-		margin: 0 auto;
+		padding: 2rem;
+		border: black 2px solid;
+		margin: 2rem;
 	}
-	.omega-1 iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-
-		border: none;
+	.omega-tiles h3 {
+		margin: 2rem auto;
 	}
 	.omega-tiles p {
 		font-size: 1.35rem;
 	}
-	.omega-center {
-		align-items: center;
-		padding: 2rem;
-		margin: 0 auto;
-		width: 100%;
-	}
-
-	.omega-1 {
-		grid-area: a;
-		border: solid black 2px;
+	.omega-1 iframe {
+		margin: 0;
 	}
 
 	.omega-2 {
