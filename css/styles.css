@@ -874,15 +874,21 @@ mindfulness meditation post
 	text-align: center;
 	font-family: var(--ff-tertiary);
 }
+/* meditation 101 section */
 .meditation-block {
 	border: 3px solid black;
 	padding: 2rem 3rem;
 	margin: 2rem auto;
+	width: 100%;
+	height: 100%;
 }
+/* key points */
 .meditation-block h4 {
 	font-family: var(--ff-secondary);
 	font-size: 2rem;
 }
+/* key points */
+
 .meditation-block-img img {
 	border-radius: 10%;
 	margin: 0 auto;
@@ -899,6 +905,7 @@ mindfulness meditation post
 .meditation-section p {
 	font-size: 1.35rem;
 }
+/*  end of meditation 101 section */
 
 .aida-section {
 	border: solid 7px black;
@@ -957,9 +964,6 @@ mindfulness meditation post
 			rgba(167, 47, 181, 1) 0%,
 			rgba(125, 185, 232, 1) 100%
 		);
-	}
-	.meditation-section {
-		margin: 0.5rem;
 	}
 }
 @media screen and (min-width: 992px) {
