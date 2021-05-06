@@ -1095,6 +1095,7 @@ meditation integration section starts
 }
 .integration-article H2 {
 	margin: 5rem auto 2rem auto;
+	text-align: center;
 }
 .integration-section span {
 	color: var(--clr-primary-5);
@@ -2353,22 +2354,34 @@ omega (tiles) ends
 */
 .omega-1 {
 	position: relative;
-	left: -1.2rem;
-	border: solid black 2px;
-	padding: 0.75rem;
-	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 56.25%;
 }
 .omega-1 iframe {
-	position: relative;
-	margin: 0 1rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+.omega-center h3 {
+	font-family: var(--ff-tertiary);
+	text-align: center;
+}
+.omega-center p {
+	font-size: 1.35rem;
 }
 .omega-2 {
-	border: solid black 2px;
 	padding: 0.75rem;
 	margin: 0 auto;
 }
 .omega-center {
 	padding: 0 2rem;
+	margin: 0 auto;
 }
 .omega-center span {
 	font-weight: 700;
@@ -2382,61 +2395,42 @@ omega (tiles) ends
 		"i";
 	margin: 2rem auto;
 	row-gap: 2rem;
+	border: solid black 2px;
+	padding: 1rem;
 }
-.omega-tiles iframe {
-	width: 410px;
-	height: 227px;
-}
-@media screen and (min-width: 768px) {
-	.omega-tiles {
-		grid-template-columns: repeat(3, 1fr);
-		column-gap: 2rem;
-	}
-}
-@media screen and (min-width: 992px) {
-	.omega-tiles {
-		grid-template-columns: repeat(4, 1fr);
-		column-gap: 2rem;
-	}
-}
+
 @media screen and (min-width: 1170px) {
 	.omega-tiles {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(1fr);
 		grid-template-areas:
 			"a a"
-			"a a"
+			"a a "
 			"i i"
 			"i i";
 		margin: 0 auto;
 	}
+	.omega-1 iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+
+		border: none;
+	}
+	.omega-tiles p {
+		font-size: 1.35rem;
+	}
 	.omega-center {
 		align-items: center;
-		max-width: 1170px;
 		padding: 2rem;
 		margin: 0 auto;
 		width: 100%;
 	}
 
-	.omega-tiles img {
-		height: 100%;
-	}
 	.omega-1 {
-		display: block;
 		grid-area: a;
 		border: solid black 2px;
-		padding: 2rem;
-	}
-
-	.omega-1 iframe {
-		padding-bottom: 2rem;
-		height: 440px;
-		width: 777px;
-		position: relative;
-		left: 7rem;
-	}
-	.omega-1 h3 {
-		font-family: var(--ff-tertiary);
-		text-align: center;
 	}
 
 	.omega-2 {
