@@ -123,6 +123,9 @@ p {
 li {
 	font-size: 1.35rem;
 }
+.chakra-btn a {
+	color: white;
+}
 
 @media screen and (min-width: 800px) {
 	h1 {
@@ -351,8 +354,11 @@ affiliate links
 	margin-bottom: 2rem;
 }
 @media screen and (min-width: 992px) {
-	.affiliate-ad {
+	.affiliate-ad img {
 		padding: 3rem;
+		width: auto;
+		height: auto;
+		margin: 0 auto;
 	}
 }
 /*
@@ -1135,16 +1141,16 @@ obstacles section ends
  */
 /* 
 ===================================
-chakras section begins
+chakra posts global styles
 ==================================
  */
 .chakra-btn a {
 	color: white;
 }
 .chakra-btn {
-	margin-bottom: 3rem;
 	display: block;
-	width: 100%;
+	width: 50%;
+	margin: 0 auto;
 }
 .chakras {
 	padding: 2rem 1rem 0 1rem;
@@ -1156,22 +1162,61 @@ chakras section begins
 .chakras p {
 	font-size: 1.35rem;
 }
-/* 
-===================================
-chakras section ends
-==================================
- */
+.chakra-iframe iframe {
+	display: block;
+	margin: 1rem auto;
+	width: 280px;
+}
+.essential-info {
+	border: solid 2px black;
+	padding: 2rem;
+}
+@media screen and (min-width: 992px) {
+	.chakra-iframe iframe {
+		width: 500px;
+		height: 300px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.root-center {
+		display: grid;
+		grid-template-columns: repeat(2, 2fr);
+		column-gap: 2rem;
+		border: black 2px solid;
+		box-shadow: var(--dark-shadow);
+	}
+	.root-center p {
+		padding: 1rem;
+	}
+	.root-center img {
+		height: 350px;
+		padding: 1rem;
+	}
+	.root-info {
+		box-shadow: var(--dark-shadow);
+	}
+	.chakra-image {
+		position: relative;
+		top: 3.5rem;
+	}
+	.chakra-image img {
+		border-radius: 15px;
+	}
+}
 
 /* 
-=============================
-mindfulness meditation post ends
-=============================
- */
+	===================================
+	end of chakra posts global styles
+	==================================
+	*/
+
 /* 
-==============
-root chakra post
-=============
- */
+	==============
+	root chakra post
+	=============
+	*/
+
 .chakra-header {
 	height: 100vh;
 	background: linear-gradient(
@@ -1187,6 +1232,9 @@ root chakra post
 	border: solid black 2px;
 	padding: 2rem;
 	margin: 3rem auto;
+}
+.root-info p {
+	font-size: 1.35rem;
 }
 .root-info h2 {
 	text-align: center;
@@ -1216,13 +1264,16 @@ root chakra post
 }
 .root-traits h4 span {
 	font-size: 2rem;
-
-	/*
-================================
-================================
- */
 }
-
+.chakra-img img {
+	margin: 0 auto 1rem auto;
+	border-radius: 5px;
+}
+@media screen and (min-width: 992px) {
+	.chakra-img img {
+		width: 500px;
+	}
+}
 /* 
 ==============
 Root chakra post ends
@@ -1269,19 +1320,13 @@ sacral chakra post
 .sacral-traits h4 span {
 	font-size: 2rem;
 }
-/* .sacral-traits span {
-	font-weight: bold;
-	color: rgb(255, 166, 0);
-} */
 
 .sacral-section h2 {
 	font-size: 3rem;
 	padding-bottom: 2rem;
 	text-align: center;
 }
-/* .sacral-section span {
-	color: rgb(255, 166, 0);
-} */
+
 .sacral-section p {
 	color: black;
 	text-transform: var(--spacing);
@@ -1319,9 +1364,7 @@ sacral chakra post
 .sacral-stones-section h2 {
 	padding: 2rem;
 }
-/* .sacral-stones-section span {
-	color: rgb(255, 166, 0);
-} */
+
 .sacral-balancing {
 	margin-top: 7rem;
 	margin-bottom: 3rem;
