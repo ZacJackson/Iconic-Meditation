@@ -1183,7 +1183,14 @@ root chakra post
 	display: grid;
 	align-items: center;
 }
-
+.root-info {
+	border: solid black 2px;
+	padding: 2rem;
+	margin: 3rem auto;
+}
+.root-info h2 {
+	text-align: center;
+}
 .root-heading {
 	font-size: 2rem;
 	color: white;
@@ -1195,7 +1202,7 @@ root chakra post
 	border: dotted 4px rgb(255, 0, 0);
 
 	outline: 4px solid rgb(255, 0, 0);
-	outline-offset: 1.5rem;
+	outline-offset: 0.5rem;
 	padding: 1rem;
 	margin-bottom: 4rem;
 	margin-top: 4rem;
@@ -1209,148 +1216,13 @@ root chakra post
 }
 .root-traits h4 span {
 	font-size: 2rem;
-}
-/* .root-traits span {
-	font-weight: bold;
-	color: red;
-} */
-.root-section {
-	padding: 1.35rem;
-	margin-top: 3rem;
-	margin-bottom: 3rem;
-}
-.root-section p {
-	font-size: 1.35rem;
-}
-.foundation {
-	border: solid red 3px;
-	padding: 2rem;
-}
-.foundation p {
-	font-size: 1.35rem;
-}
-/* .foundation span {
-	color: red;
-} */
-/* .root-section span {
-	color: red;
-} */
-.root-btn a {
-	color: white;
-}
-.root-btn {
-	display: grid;
-	grid-template-columns: 1fr;
-}
-.root-btn-center {
-	float: right;
-	background: red;
-}
-.root-btn-center a {
-	color: white;
-}
-.root-stones-section {
-	padding-top: 5rem;
-	text-align: center;
+
+	/*
+================================
+================================
+ */
 }
 
-.root-stones-section h2 {
-	padding: 2rem;
-}
-/* .root-stones-section span {
-	color: red;
-} */
-.article-stones p {
-	font-size: 1.35rem;
-}
-.music-root-section {
-	border: solid red 3px;
-	margin: 7rem auto;
-	padding: 1.35rem;
-	padding-bottom: 3rem;
-}
-.music-root-section h2 {
-	text-align: center;
-}
-.music-root-section p {
-	font-size: 1.35rem;
-}
-/* .music-root-section span {
-	color: red;
-} */
-.essential-article p {
-	font-size: 1.35rem;
-}
-.essential-article h2 {
-	text-align: center;
-}
-.essential-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-}
-/* .essential-span {
-	color: red;
-} */
-.essential-root-section {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	border: solid red 3px;
-}
-.essential-img-section p {
-	font-size: 1.5rem;
-	padding-top: 2rem;
-}
-
-.clear-essential {
-	float: left;
-}
-.clear p {
-	clear: both;
-}
-/* .essential-section span {
-	color: red;
-} */
-.essential-root-section p {
-	font-size: 1.45rem;
-	padding-top: 2rem;
-}
-/* .essential-root-section span {
-	color: rgb(255, 0, 0);
-} */
-
-.key-points-bold {
-	font-weight: bolder;
-}
-
-.responsive {
-	padding-bottom: 56.25%;
-	position: relative;
-	width: 100%;
-	height: 0;
-}
-.responsive iframe {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
-.chakra-stones-img {
-	padding-bottom: 3rem;
-}
-@media screen and (max-width: 768px) {
-	.chakra-header {
-		background: linear-gradient(
-			rgba(50, 6, 122, 0.795),
-			rgba(202, 7, 7, 0.418)
-		);
-	}
-	.essential-root-section {
-		display: grid;
-		grid-template-columns: 1fr;
-		padding: 2rem;
-	}
-}
 /* 
 ==============
 Root chakra post ends
@@ -2358,7 +2230,8 @@ omega (tiles) ends
 ========================
 */
 .omega-tiles {
-	border: solid black 2px;
+	/* margin: auto; */
+	margin-bottom: 4rem;
 	padding: 2rem;
 }
 .omega-1 {
@@ -2388,6 +2261,10 @@ omega (tiles) ends
 .omega-2 {
 	padding: 0.75rem;
 	margin: 0 auto;
+	border: black solid 2px;
+}
+.omega-2 p {
+	text-align: center;
 }
 .omega-center {
 	padding: 0 2rem;
@@ -2401,8 +2278,7 @@ omega (tiles) ends
 @media screen and (min-width: 1170px) {
 	.omega-tiles {
 		padding: 2rem;
-		border: black 2px solid;
-		margin: 2rem;
+		margin: 8rem auto 5rem auto;
 	}
 	.omega-tiles h3 {
 		margin: 2rem auto;
@@ -2448,4 +2324,4 @@ omega (tiles) ends
 ========================
 omega (tiles) ends
 ========================
- */
+*/
