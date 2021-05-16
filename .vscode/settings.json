@@ -1,7 +1,7 @@
 {
-	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"prettier.tabWidth": 10,
 	"prettier.useTabs": true,
-	"liveServer.settings.port": 5501
+	"liveServer.settings.port": 5501,
+	"editor.formatOnSave": true
 }

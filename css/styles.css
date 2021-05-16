@@ -6,6 +6,7 @@ Fonts
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
 /*
 =============== 
 Variables
@@ -42,6 +43,7 @@ Variables
 	--ff-primary: "Lato", sans-serif;
 	--ff-secondary: "Dancing Script", cursive;
 	--ff-tertiary: "Cinzel", serif;
+	--ff-four: "Noto", serif;
 	--transition: all 0.3s linear;
 	--spacing: 0.25rem;
 	--radius: 0.5rem;
@@ -61,7 +63,7 @@ Global Styles
 }
 body {
 	font-family: var(--ff-primary);
-	background: var(--clr-white);
+	background: #ffffff;
 	color: var(--clr-grey-1);
 	line-height: 1.5;
 	font-size: 0.875rem;
@@ -203,7 +205,7 @@ Navbar
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: var(--clr-white);
+	background: rgb(255, 255, 255);
 	box-shadow: var(--dark-shadow);
 	z-index: 2;
 }
@@ -222,6 +224,12 @@ Navbar
 	align-items: center;
 	padding: 1rem 2rem;
 }
+.navbar img{
+	height: 70px;
+	width: 100px;
+position: relative;
+left: 10rem;
+}
 .nav-toggle {
 	background: transparent;
 	border: transparent;
@@ -238,9 +246,9 @@ Navbar
 	padding: 1rem 2rem;
 	text-transform: capitalize;
 	letter-spacing: var(--spacing);
-	color: var(--clr-grey-1);
+	color: rgb(0, 0, 0);
 	cursor: pointer;
-	font-size: 1.3rem;
+	font-size: 1rem;
 }
 .nav-link:hover {
 	color: var(--clr-primary-1);
@@ -284,6 +292,11 @@ Navbar
 		padding: 0 0;
 		height: 80px;
 	}
+	.navbar img{
+		height: 70px;
+	position: relative;
+	left: 2rem;
+	}
 	.nav-link {
 		padding: 0 0;
 		margin-right: 2rem;
@@ -299,7 +312,7 @@ Navbar
 	}
 	.nav-icon {
 		margin-right: 0.7rem;
-		color: var(--clr-primary-1);
+		color: rgb(0, 0, 0);
 		font-size: 1.2rem;
 		transition: var(--transition);
 	}
@@ -309,40 +322,23 @@ Navbar
 }
 
 /*
-=============== 
-comments
-===============
+====================== 
+disqus comment section
+======================
 */
-#respond {
-	margin: 3rem 3rem;
-	padding: 3rem 3rem;
-	display: block;
+.comment-section {
+	padding: 2rem;
+	margin-bottom: 2rem;
+	border: 2px solid black;
 }
+.comment-heading h2{
+font-family: var(--ff-secondary)
 
-#respond input[type="text"],
-#respond input[type="email"],
-#respond textarea {
-	margin-bottom: 10px;
-	display: block;
-	width: 100%;
-	margin-left: 3rem;
-	margin-right: 3rem;
-	padding: 1.35rem;
-
-	border: 1px solid rgba(0, 0, 0, 0.5);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-khtml-border-radius: 5px;
-	border-radius: 5px;
-
-	line-height: 1.4em;
 }
 /*
-=============== 
-comments
-===============
+=============================
+end of disqus comment section
+============================
 */
 /*
 =============== 
@@ -372,27 +368,21 @@ Hero
 ===============
 */
 .hero {
+	background: red;
 	height: 100vh;
-	background: var(--clr-primary-5);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: none;
 }
 .hero-banner {
 	text-align: center;
 	color: var(--clr-white);
-	padding: 0 3 rem;
+	padding: 0 3rem;
 }
-.hero-banner h1 {
+
+.hero-banner h2 {
 	text-transform: uppercase;
+	font-size: 1.1rem;
 }
-.hero-banner p {
-	max-width: 35rem;
-	margin-left: auto;
-	margin-right: auto;
-	color: var(--clr-white);
-	letter-spacing: var(--spacing);
-}
+
 .hero-btn {
 	padding: 0.9rem 1.6rem;
 	font-size: 1.6rem;
@@ -407,19 +397,73 @@ Hero
 }
 @media screen and (min-width: 768px) {
 	.hero {
-		background: linear-gradient(
-				rgb(44, 174, 186, 0.7),
-				rgba(0, 0, 0, 0.7)
-			),
-			url("../images/Iconic_meditation_image_of_a_woman_meditating.jpeg")
-				center/cover no-repeat;
+		display: block;
 	}
 	.hero-banner {
+		height: 100vh;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 1fr;
+		grid-template-areas:
+			"a a b c"
+			"a a b d";
 		padding: 0;
 	}
 	.hero-banner p {
-		max-width: 45rem;
+		color: rgb(255, 255, 255);
+		font-size: 1.45rem;
 	}
+
+	.hero img {
+		height: 100%;
+		object-fit: cover;
+		width: 100%;
+		border: solid black 4px;
+	}
+	.hero img:hover {
+		transform: scale(1.1);
+		transition: var(--transition);
+	}
+
+	.tile1 {
+		display: inline;
+		grid-area: a;
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	.tile1 h2 {
+		position: relative;
+		bottom: 15rem;
+		left: 2rem;
+		text-align: left;
+		font-size: 4rem;
+		font-family: var(--ff-four);
+		color: white;
+	}
+	.tile1 p {
+		position: relative;
+		bottom: 16rem;
+		left: 8rem;
+		font-size: 1rem;
+		font-family: var(--ff-four);
+		color: rgb(255, 255, 255);
+	}
+
+	.tile2 {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 3;
+		grid-row-end: 4;
+		grid-area: b;
+	}
+
+	.tile3 {
+		grid-area: c;
+	}
+	.tile4 {
+		grid-area: d;
+	}
+
 	.hero-btn {
 		padding: 0.9rem 1.6rem;
 		font-size: 1.6rem;
@@ -491,10 +535,9 @@ blog
 	border-top-right-radius: var(--radius);
 }
 .card-footer img {
-	width: 2rem;
+	width: 3rem;
 	height: 2rem;
 	object-fit: cover;
-	border-radius: 50%;
 }
 .card-footer {
 	display: grid;
@@ -849,6 +892,34 @@ Footer
 mindfulness meditation post
 ===========
  */
+ /* 
+ =====================
+ sidebar-compponenets
+ ======================
+ */
+ @media screen and (min-width: 992px){
+ .meditation-block-6 {
+	 border: solid 2px rgba(0, 0, 0, 0);
+	 background: rgb(255, 255, 255);
+	 border-radius: 10px;
+	 margin:0 auto;
+	 grid-area: f;
+ }
+ .meditation-block-sidebar {
+	 padding: 0.5rem 1rem;
+	 box-shadow: -1px 1px 5px 6px rgb(0, 255, 255);
+	 margin: 0 auto;
+	 color: rgba(55, 248, 248, 0.705);
+ }
+ .infographic{
+	 margin: 2rem auto;
+ }
+}
+/* 
+=========================
+end of sidebar components
+=========================
+ */
 .post-header {
 	height: 100vh;
 	background: linear-gradient(
@@ -881,12 +952,84 @@ mindfulness meditation post
 	font-family: var(--ff-tertiary);
 }
 /* meditation 101 section */
+.meditation-section {
+	margin: 2rem;
+	max-width: 1200px;
+}
+@media screen and (min-width: 992px) {
+	.meditation-section {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		column-gap: 2rem;
+		row-gap: 2rem;
+		grid-template-areas:
+			"a a a a f f"
+			"b b b b f f"
+			"c c c c f f"
+			"d d d d f f"
+			"e e e e f f";
+		margin: auto;
+	}
+	.meditation-block {
+		margin: 5rem auto;
+		float: left;
+		clear: right;
+	}
+
+	.meditation-block-1 {
+		
+		border: solid 2px rgba(0, 0, 0, 0);
+		box-shadow: var(--dark-shadow);
+		margin: 2rem;
+		grid-area: a;
+	}
+	.meditation-block-1 img {
+		float: left;
+		clear: right;
+	}
+	.meditation-block-2 {
+		border: solid 2px rgba(0, 0, 0, 0);
+		box-shadow: var(--dark-shadow);
+		grid-area: b;
+	}
+	.meditation-block-3 {
+		border: solid 2px rgba(0, 0, 0, 0);
+		box-shadow: var(--dark-shadow);
+		grid-area: c;
+	}
+	.meditation-block-4 {
+		border: solid 2px rgba(0, 0, 0, 0);
+		box-shadow: var(--dark-shadow);
+		grid-area: d;
+	}
+	.meditation-block-5 {
+		border: solid 2px rgba(0, 0, 0, 0);
+		box-shadow: var(--dark-shadow);
+		grid-area: e;
+	}
+
+	.meditation-block img {
+		border-radius: 10px;
+	}
+	.img-container {
+		border: red solid 7px;
+		padding: 1rem;
+		margin: 2rem;
+		height: 250px;
+	}
+	.img-container img {
+		float: left;
+		clear: right;
+		margin: 0 2rem 0 1rem;
+	}
+	.img-container p {
+		padding: 1rem;
+	}
+}
 .meditation-block {
-	border: 3px solid black;
+	border: 3px solid rgba(0, 0, 0, 0);
 	padding: 2rem 3rem;
 	margin: 2rem auto;
-	width: 100%;
-	height: 100%;
 }
 /* key points */
 .meditation-block h4 {
@@ -894,11 +1037,6 @@ mindfulness meditation post
 	font-size: 2rem;
 }
 /* key points */
-
-.meditation-block-img img {
-	border-radius: 10%;
-	margin: 0 auto;
-}
 
 .meditation-section h3 {
 	font-size: 3rem;
@@ -988,11 +1126,13 @@ mindfulness meditation post
 		padding: 2rem 3rem;
 		margin: 1rem auto;
 	}
-	.meditation-section img {
-		border-radius: 10%;
+	/* .meditation-section img {
+		border-radius: 10px;
+		float: left;
+		clear: right;
 		width: 700px;
 		margin: auto auto;
-	}
+	} */
 }
 
 /* 
@@ -1006,6 +1146,8 @@ mindfulness meditation post
 	padding: 2rem;
 	color: rgb(0, 0, 0);
 	font-size: 1.2rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 .info-box p {
 	color: rgb(0, 0, 0);
@@ -1232,6 +1374,12 @@ chakra posts global styles
 	border: solid black 2px;
 	padding: 2rem;
 	margin: 3rem auto;
+}
+.root-img img {
+	width: 900px;
+	padding: 2rem;
+	display: block;
+	margin: 0 auto;
 }
 .root-info p {
 	font-size: 1.35rem;
@@ -2277,22 +2425,7 @@ omega (tiles) ends
 	margin-bottom: 4rem;
 	padding: 2rem;
 }
-.omega-1 {
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-	padding-top: 56.25%;
-}
-.omega-1 iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	border: none;
-}
+
 .omega-center h3 {
 	font-family: var(--ff-tertiary);
 	text-align: center;
@@ -2368,3 +2501,22 @@ omega (tiles) ends
 omega (tiles) ends
 ========================
 */
+/* 
+========================
+paractice
+========================
+*/
+.img-container {
+	border: red solid 7px;
+	padding: 1rem;
+	margin: 2rem;
+	height: 250px;
+}
+.img-container img {
+	float: left;
+	clear: right;
+	margin: 0 2rem 0 1rem;
+}
+.img-container p {
+	padding: 1rem;
+}
